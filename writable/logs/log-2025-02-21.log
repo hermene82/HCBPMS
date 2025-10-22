@@ -1,0 +1,142 @@
+INFO - 2025-02-21 15:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-21 15:10:37 --> ErrorException: Undefined array key "prm"
+in APPPATH\Views\empresa\emp_lst.php on line 9.
+ 1 APPPATH\Views\empresa\emp_lst.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\empresa\\emp_lst.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\empresa\\emp_lst.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empresa/emp_lst', [], true)
+ 5 APPPATH\Controllers\Empresa.php(64): view('empresa/emp_lst', [...])
+ 6 APPPATH\Controllers\Empresa.php(39): App\Controllers\Empresa->___index()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-21 15:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-21 15:23:50 --> Sesión expirada por inactividad
+INFO - 2025-02-21 15:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 15:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 16:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 16:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 16:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 16:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-21 16:51:46 --> ErrorException: Undefined variable $campo_config
+in APPPATH\Helpers\TransacProducto_helper.php on line 110.
+ 1 APPPATH\Helpers\TransacProducto_helper.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $campo_config', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Helpers\\TransacProducto_helper.php', 110)
+ 2 APPPATH\Helpers\TransacProducto_helper.php(42): configuraCombo([...])
+ 3 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion(1)
+ 4 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('4-440101')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-21 16:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 16:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-21 17:03:06 --> ErrorException: Undefined variable $campo_config
+in APPPATH\Helpers\TransacProducto_helper.php on line 110.
+ 1 APPPATH\Helpers\TransacProducto_helper.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $campo_config', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Helpers\\TransacProducto_helper.php', 110)
+ 2 APPPATH\Helpers\TransacProducto_helper.php(42): configuraCombo([...])
+ 3 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion(1)
+ 4 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('4-440101')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-21 17:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-21 17:09:53 --> ErrorException: Undefined variable $campo_config
+in APPPATH\Helpers\TransacProducto_helper.php on line 110.
+ 1 APPPATH\Helpers\TransacProducto_helper.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $campo_config', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Helpers\\TransacProducto_helper.php', 110)
+ 2 APPPATH\Helpers\TransacProducto_helper.php(42): configuraCombo([...])
+ 3 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion(1)
+ 4 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('4-440101')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-21 17:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-21 17:11:45 --> ErrorException: Undefined variable $campo_config
+in APPPATH\Helpers\TransacProducto_helper.php on line 110.
+ 1 APPPATH\Helpers\TransacProducto_helper.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $campo_config', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Helpers\\TransacProducto_helper.php', 110)
+ 2 APPPATH\Helpers\TransacProducto_helper.php(42): configuraCombo([...])
+ 3 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion(1)
+ 4 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('4-440101')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-21 17:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-21 17:16:45 --> Sesión expirada por inactividad
+INFO - 2025-02-21 17:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-21 17:17:03 --> ErrorException: Undefined variable $campo_config
+in APPPATH\Helpers\TransacProducto_helper.php on line 110.
+ 1 APPPATH\Helpers\TransacProducto_helper.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $campo_config', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Helpers\\TransacProducto_helper.php', 110)
+ 2 APPPATH\Helpers\TransacProducto_helper.php(42): configuraCombo([...])
+ 3 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion(1)
+ 4 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('4-440101')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-21 17:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-21 17:21:37 --> ErrorException: Undefined variable $campo_config
+in APPPATH\Helpers\TransacProducto_helper.php on line 110.
+ 1 APPPATH\Helpers\TransacProducto_helper.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $campo_config', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Helpers\\TransacProducto_helper.php', 110)
+ 2 APPPATH\Helpers\TransacProducto_helper.php(42): configuraCombo([...])
+ 3 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion(1)
+ 4 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('4-440101')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-21 17:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-21 17:22:33 --> ErrorException: Undefined array key "campos"
+in APPPATH\Helpers\TransacProducto_helper.php on line 30.
+ 1 APPPATH\Helpers\TransacProducto_helper.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "campos"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Helpers\\TransacProducto_helper.php', 30)
+ 2 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion('4-440101')
+ 3 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('4-440101')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-21 17:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-21 17:25:03 --> ErrorException: Undefined array key "prm"
+in APPPATH\Views\empresa\emp_lst.php on line 9.
+ 1 APPPATH\Views\empresa\emp_lst.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\empresa\\emp_lst.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\empresa\\emp_lst.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empresa/emp_lst', [], true)
+ 5 APPPATH\Controllers\Empresa.php(64): view('empresa/emp_lst', [...])
+ 6 APPPATH\Controllers\Empresa.php(39): App\Controllers\Empresa->___index()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-21 17:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-21 17:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

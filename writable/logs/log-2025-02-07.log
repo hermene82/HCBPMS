@@ -1,0 +1,1202 @@
+INFO - 2025-02-07 00:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:09:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:09:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:09:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:09:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:16:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:16:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:34:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:34:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:35:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-07 00:35:07 --> ParseError: syntax error, unexpected token "|"
+in APPPATH\Controllers\Empresa.php on line 89.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Empresa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Empresa')
+ 4 SYSTEMPATH\CodeIgniter.php(901): class_exists('\\App\\Controllers\\Empresa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-07 00:36:21 --> ParseError: syntax error, unexpected token "|"
+in APPPATH\Controllers\Empresa.php on line 89.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Empresa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Empresa')
+ 4 SYSTEMPATH\CodeIgniter.php(901): class_exists('\\App\\Controllers\\Empresa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:39:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:39:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:40:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:46:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:46:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:49:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:49:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:49:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 00:51:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:59:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 00:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 00:59:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 22:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 22:57:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 22:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 22:57:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-07 22:57:46 --> ErrorException: file_get_contents(C:\inetpub\wwwroot\HCbpms\writable\debugbar/debugbar_1738904957.037713.json): Failed to open stream: No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 86.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\inetpub\\wwwroot\\HCbpms\\writable\\debugbar/debugbar_1738904957.037713.json): Failed to open stream: No such file or directory', 'C:\\inetpub\\wwwroot\\HCbpms\\system\\Debug\\Toolbar\\Collectors\\History.php', 86)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(86): file_get_contents('C:\\inetpub\\wwwroot\\HCbpms\\writable\\debugbar/debugbar_1738904957.037713.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(496): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1738987064.942181', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(475): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 22:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 22:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:03:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:03:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:06:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:06:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:06:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-07 23:12:18 --> Sesión expirada por inactividad
+INFO - 2025-02-07 23:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:12:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:12:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:12:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:12:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-07 23:18:26 --> Sesión expirada por inactividad
+INFO - 2025-02-07 23:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:18:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:18:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:18:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:18:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:21:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:22:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:22:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:28:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:28:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:45:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:45:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-07 23:45:31 --> ErrorException: file_get_contents(C:\inetpub\wwwroot\HCbpms\writable\debugbar/debugbar_1738987438.052570.json): Failed to open stream: No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 86.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\inetpub\\wwwroot\\HCbpms\\writable\\debugbar/debugbar_1738987438.052570.json): Failed to open stream: No such file or directory', 'C:\\inetpub\\wwwroot\\HCbpms\\system\\Debug\\Toolbar\\Collectors\\History.php', 86)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(86): file_get_contents('C:\\inetpub\\wwwroot\\HCbpms\\writable\\debugbar/debugbar_1738987438.052570.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(496): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1738989929.993355', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(475): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:45:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:51:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:51:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:52:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:52:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:52:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:55:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-07 23:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$config is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(916): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$structo is deprecated in APPPATH\Controllers\Empresa.php on line 433.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$botoo is deprecated in APPPATH\Controllers\Empresa.php on line 437.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$comboo is deprecated in APPPATH\Controllers\Empresa.php on line 444.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$datoo is deprecated in APPPATH\Controllers\Empresa.php on line 457.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$tablao is deprecated in APPPATH\Controllers\Empresa.php on line 459.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposo is deprecated in APPPATH\Controllers\Empresa.php on line 460.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$filtroo is deprecated in APPPATH\Controllers\Empresa.php on line 606.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposdeto is deprecated in APPPATH\Controllers\Empresa.php on line 640.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$importao is deprecated in APPPATH\Controllers\Empresa.php on line 767.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-02-07 23:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$camposboto is deprecated in APPPATH\Controllers\Empresa.php on line 783.
+ 1 APPPATH\Controllers\Empresa.php(12): App\Controllers\Empresa->_param('_440101')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

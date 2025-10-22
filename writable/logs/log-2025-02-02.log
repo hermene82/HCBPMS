@@ -1,0 +1,46 @@
+INFO - 2025-02-02 12:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:19:41 --> CSRF token verified.
+INFO - 2025-02-02 12:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:29:34 --> CSRF token verified.
+INFO - 2025-02-02 12:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:50:57 --> CSRF token verified.
+INFO - 2025-02-02 12:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 12:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 23:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-02 23:56:22 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Views\layout\menu.php on line 17.
+ 1 APPPATH\Views\layout\menu.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\layout\\menu.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\layout\\menu.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout/menu', null, true)
+ 5 APPPATH\Views\layout\template.php(24): CodeIgniter\View\View->include('layout/menu')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\layout\\template.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/template', [], true)
+ 9 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('login', [], true)
+10 APPPATH\Controllers\Login.php(13): view('login')
+11 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Login->index()
+12 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-02 23:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 23:59:49 --> CSRF token verified.
+INFO - 2025-02-02 23:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-02 23:59:50 --> ErrorException: Undefined variable $sessionId
+in APPPATH\Controllers\Login.php on line 64.
+ 1 APPPATH\Controllers\Login.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sessionId', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Login.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

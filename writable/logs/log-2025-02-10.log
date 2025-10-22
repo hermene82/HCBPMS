@@ -1,0 +1,87 @@
+INFO - 2025-02-10 01:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-10 01:26:52 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "4|440101"
+in SYSTEMPATH\Router\Router.php on line 704.
+ 1 SYSTEMPATH\Router\Router.php(195): CodeIgniter\Router\Router->checkDisallowedChars('empresa/index/4|440101')
+ 2 SYSTEMPATH\CodeIgniter.php(825): CodeIgniter\Router\Router->handle('empresa/index/4|440101')
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-10 01:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-10 01:29:42 --> ErrorException: Undefined array key 1
+in APPPATH\Helpers\TransacProducto_helper.php on line 8.
+ 1 APPPATH\Helpers\TransacProducto_helper.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Helpers\\TransacProducto_helper.php', 8)
+ 2 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion('_4%7C440101')
+ 3 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('_4%7C440101')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4|440101')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-10 01:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-10 01:30:57 --> ErrorException: Undefined array key 1
+in APPPATH\Helpers\TransacProducto_helper.php on line 7.
+ 1 APPPATH\Helpers\TransacProducto_helper.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Helpers\\TransacProducto_helper.php', 7)
+ 2 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion('_4%7C440101')
+ 3 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('_4%7C440101')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4|440101')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-10 01:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-10 01:38:06 --> ErrorException: Undefined variable $resultado
+in APPPATH\Helpers\TransacProducto_helper.php on line 22.
+ 1 APPPATH\Helpers\TransacProducto_helper.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Helpers\\TransacProducto_helper.php', 22)
+ 2 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion('_4-440101')
+ 3 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('_4-440101')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-10 01:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-10 01:42:35 --> ErrorException: Undefined property: stdClass::$r_dato
+in APPPATH\Controllers\Empresa.php on line 38.
+ 1 APPPATH\Controllers\Empresa.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$r_dato', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-10 01:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-10 01:46:05 --> ErrorException: Undefined property: stdClass::$r_dato
+in APPPATH\Controllers\Empresa.php on line 38.
+ 1 APPPATH\Controllers\Empresa.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$r_dato', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-10 01:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-10 01:48:53 --> ErrorException: Undefined property: stdClass::$r_dato
+in APPPATH\Controllers\Empresa.php on line 38.
+ 1 APPPATH\Controllers\Empresa.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$r_dato', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-10 01:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-10 01:52:17 --> TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, function "ConfigTransacc_440101" not found or invalid function name
+in APPPATH\Helpers\TransacProducto_helper.php on line 15.
+ 1 APPPATH\Controllers\Empresa.php(313): obtenerConfiguracionTransaccion('_4-440101')
+ 2 APPPATH\Controllers\Empresa.php(37): App\Controllers\Empresa->_param('_4-440101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-02-10 01:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-10 01:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

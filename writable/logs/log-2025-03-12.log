@@ -1,0 +1,151 @@
+INFO - 2025-03-12 08:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:30:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(40): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('2-220101')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:32:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(40): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('2-220101')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:39:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(40): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('2-220101')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:41:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(40): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('2-220101')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:42:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(179): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->detalle('2-220101', '1', '25--')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:42:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(621): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('2-220101', '10', '5--')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:45:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(179): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->detalle('2-220101', '32', '32--')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:45:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(256): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->nuevo('2-220101', '0', '32--', 'D', '0', 'catalogo|32|32--')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:50:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(256): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->nuevo('2-220101', '0', '32--', 'D', '0', 'catalogo|32|32--')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-12 08:53:51 --> Sesión expirada por inactividad
+INFO - 2025-03-12 08:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:54:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(40): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('2-220101')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:55:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(621): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('2-220101', '31', '31--')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:56:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(40): App\Controllers\Empresa->_param('4-440101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-12 08:56:11 --> ErrorException: foreach() argument must be of type array|object, string given
+in APPPATH\Views\empresa\emp_lst.php on line 449.
+ 1 APPPATH\Views\empresa\emp_lst.php(449): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\empresa\\emp_lst.php', 449)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\empresa\\emp_lst.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empresa/emp_lst', [], true)
+ 5 APPPATH\Controllers\Empresa.php(67): view('empresa/emp_lst', [...])
+ 6 APPPATH\Controllers\Empresa.php(42): App\Controllers\Empresa->___index()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('4-440101')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-12 08:56:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1177.
+ 1 APPPATH\Controllers\Empresa.php(1156): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(40): App\Controllers\Empresa->_param('2-220101')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('2-220101')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-12 08:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-12 08:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

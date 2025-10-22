@@ -1,0 +1,490 @@
+INFO - 2025-01-31 00:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:34:49 --> CSRF token verified.
+INFO - 2025-01-31 00:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:39:32 --> CSRF token verified.
+INFO - 2025-01-31 00:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:44:01 --> CSRF token verified.
+INFO - 2025-01-31 00:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:45:42 --> CSRF token verified.
+INFO - 2025-01-31 00:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:46:42 --> CSRF token verified.
+INFO - 2025-01-31 00:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:49:26 --> CSRF token verified.
+INFO - 2025-01-31 00:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-31 00:49:26 --> Error: Undefined constant "App\Controllers\menuItems"
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-31 00:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:50:50 --> CSRF token verified.
+INFO - 2025-01-31 00:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:54:27 --> CSRF token verified.
+INFO - 2025-01-31 00:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:57:26 --> CSRF token verified.
+INFO - 2025-01-31 00:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 00:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 01:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 01:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 01:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 01:14:39 --> CSRF token verified.
+INFO - 2025-01-31 01:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 01:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 01:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 01:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 16:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 16:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 16:59:43 --> CSRF token verified.
+INFO - 2025-01-31 16:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 16:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:05:53 --> CSRF token verified.
+INFO - 2025-01-31 17:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:19:01 --> CSRF token verified.
+INFO - 2025-01-31 17:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-31 17:19:01 --> mysqli_sql_exception: Unknown column 't.NOMBRE_PRODUCTO' in 'field list' in C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `t`.`NOM...', 0)
+#1 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`NOM...')
+#2 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`NOM...')
+#3 C:\inetpub\wwwroot\HCbpms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOM...', Array, false)
+#4 C:\inetpub\wwwroot\HCbpms\app\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\inetpub\wwwroot\HCbpms\app\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(28)
+#6 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(943): App\Controllers\Home->index()
+#7 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\inetpub\wwwroot\HCbpms\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-31 17:19:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 't.NOMBRE_PRODUCTO' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = :sm.IDSESION:
+AND `sm`.`ESTADO` = :sm.ESTADO:
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`', [...], false)
+ 2 APPPATH\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(28)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-31 17:19:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 't.NOMBRE_PRODUCTO' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 28
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 28
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = :sm.IDSESION:
+AND `sm`.`ESTADO` = :sm.ESTADO:
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`', [...], false)
+ 4 APPPATH\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(28)
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-31 17:19:01 --> [Caused by] mysqli_sql_exception: Unknown column 't.NOMBRE_PRODUCTO' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 28
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 28
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 28
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = :sm.IDSESION:
+AND `sm`.`ESTADO` = :sm.ESTADO:
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`', [...], false)
+ 5 APPPATH\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(28)
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-31 17:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:22:47 --> CSRF token verified.
+INFO - 2025-01-31 17:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-31 17:22:47 --> mysqli_sql_exception: Unknown column 't.NOMBRE_PRODUCTO' in 'group statement' in C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `t`.`NOM...', 0)
+#1 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`NOM...')
+#2 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`NOM...')
+#3 C:\inetpub\wwwroot\HCbpms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOM...', Array, false)
+#4 C:\inetpub\wwwroot\HCbpms\app\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\inetpub\wwwroot\HCbpms\app\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(29)
+#6 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(943): App\Controllers\Home->index()
+#7 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\inetpub\wwwroot\HCbpms\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-31 17:22:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 't.NOMBRE_PRODUCTO' in 'group statement'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = :sm.IDSESION:
+AND `sm`.`ESTADO` = :sm.ESTADO:
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`', [...], false)
+ 2 APPPATH\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(29)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-31 17:22:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 't.NOMBRE_PRODUCTO' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 29
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 29
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = :sm.IDSESION:
+AND `sm`.`ESTADO` = :sm.ESTADO:
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`', [...], false)
+ 4 APPPATH\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(29)
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-31 17:22:47 --> [Caused by] mysqli_sql_exception: Unknown column 't.NOMBRE_PRODUCTO' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 29
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 29
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 29
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = :sm.IDSESION:
+AND `sm`.`ESTADO` = :sm.ESTADO:
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE_PRODUCTO`, `m`.`NOMBRE_MODULO`', [...], false)
+ 5 APPPATH\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(29)
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-31 17:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:24:18 --> CSRF token verified.
+INFO - 2025-01-31 17:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-31 17:24:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`' at line 7 in C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `t`.`NOM...', 0)
+#1 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`NOM...')
+#2 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`NOM...')
+#3 C:\inetpub\wwwroot\HCbpms\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOM...', Array, false)
+#4 C:\inetpub\wwwroot\HCbpms\app\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\inetpub\wwwroot\HCbpms\app\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(30)
+#6 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(943): App\Controllers\Home->index()
+#7 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\inetpub\wwwroot\HCbpms\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-31 17:24:19 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = :sm.IDSESION:
+AND `sm`.`ESTADO` = :sm.ESTADO:
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`', [...], false)
+ 2 APPPATH\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(30)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-31 17:24:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 30
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 30
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = :sm.IDSESION:
+AND `sm`.`ESTADO` = :sm.ESTADO:
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`', [...], false)
+ 4 APPPATH\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(30)
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-31 17:24:19 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 30
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 30
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = 30
+AND `sm`.`ESTADO` = \'A\'
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`
+FROM `SESIONMENU` `sm`
+JOIN `TRANSACCION` `t` ON `sm`.`IDTRANSACCION` = `t`.`IDTRANSACCION`
+LEFT JOIN `MODULO` `m` ON `t`.`IDMODULO` = `m`.`IDMODULO`
+WHERE `sm`.`IDSESION` = :sm.IDSESION:
+AND `sm`.`ESTADO` = :sm.ESTADO:
+GROUP BY `t`.`NOMBRE`, `t`.`RUTA`, `t`.`NOMBRE` `NOMBRE_PRODUCTO`, `m`.`NOMBRE` `NOMBRE_MODULO`', [...], false)
+ 5 APPPATH\Models\SesionMenuModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(18): App\Models\SesionMenuModel->getMenuByUser(30)
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-31 17:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:25:22 --> CSRF token verified.
+INFO - 2025-01-31 17:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:39:07 --> CSRF token verified.
+INFO - 2025-01-31 17:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:39:46 --> CSRF token verified.
+INFO - 2025-01-31 17:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 17:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-31 22:36:21 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('auth', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-31 22:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:36:45 --> CSRF token verified.
+INFO - 2025-01-31 22:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:45:00 --> CSRF token verified.
+INFO - 2025-01-31 22:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 22:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:03:53 --> CSRF token verified.
+INFO - 2025-01-31 23:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-31 23:03:53 --> ErrorException: Undefined variable $menu
+in APPPATH\Views\home.php on line 14.
+ 1 APPPATH\Views\home.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menu', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\home.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-31 23:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:05:11 --> CSRF token verified.
+INFO - 2025-01-31 23:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:06:19 --> CSRF token verified.
+INFO - 2025-01-31 23:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-31 23:06:19 --> ErrorException: Undefined variable $menuItems
+in APPPATH\Views\home.php on line 53.
+ 1 APPPATH\Views\home.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menuItems', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\home.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\inetpub\\wwwroot\\HCbpms\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-31 23:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:07:08 --> CSRF token verified.
+INFO - 2025-01-31 23:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:09:17 --> CSRF token verified.
+INFO - 2025-01-31 23:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-31 23:17:17 --> Sesión expirada por inactividad
+INFO - 2025-01-31 23:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:17:24 --> CSRF token verified.
+INFO - 2025-01-31 23:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:18:57 --> CSRF token verified.
+INFO - 2025-01-31 23:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:21:28 --> CSRF token verified.
+INFO - 2025-01-31 23:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:24:46 --> CSRF token verified.
+INFO - 2025-01-31 23:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-31 23:34:12 --> Sesión expirada por inactividad
+INFO - 2025-01-31 23:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:34:24 --> CSRF token verified.
+INFO - 2025-01-31 23:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:59:53 --> CSRF token verified.
+INFO - 2025-01-31 23:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 23:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

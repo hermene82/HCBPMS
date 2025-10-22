@@ -1,0 +1,246 @@
+INFO - 2025-04-30 13:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 13:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 13:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 13:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 13:57:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(38): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('1-110301')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 13:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 14:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 14:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 14:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 14:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 14:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 14:33:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(38): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('1-110301')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 14:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 14:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 14:33:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(177): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->detalle('1-110301', '1', '110101--')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 14:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 14:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 14:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 16:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 16:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 16:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 16:52:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(38): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('1-110301')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 16:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 16:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 16:53:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(600): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', '110101--')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-30 16:53:16 --> ErrorException: Undefined array key "prm"
+in APPPATH\Controllers\Empresa.php on line 795.
+ 1 APPPATH\Controllers\Empresa.php(795): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 795)
+ 2 APPPATH\Controllers\Empresa.php(616): App\Controllers\Empresa->getCamposConfig('0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', '110101--')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 16:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 16:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 16:54:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(600): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-30 16:54:17 --> ErrorException: Undefined array key "prm"
+in APPPATH\Controllers\Empresa.php on line 795.
+ 1 APPPATH\Controllers\Empresa.php(795): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 795)
+ 2 APPPATH\Controllers\Empresa.php(616): App\Controllers\Empresa->getCamposConfig('0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 16:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 17:01:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(600): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '2', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-30 17:01:42 --> ErrorException: Undefined array key "prm"
+in APPPATH\Controllers\Empresa.php on line 795.
+ 1 APPPATH\Controllers\Empresa.php(795): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 795)
+ 2 APPPATH\Controllers\Empresa.php(616): App\Controllers\Empresa->getCamposConfig('0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '2', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 17:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 17:02:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(600): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', 'B', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-30 17:02:05 --> ErrorException: Undefined array key "prm"
+in APPPATH\Controllers\Empresa.php on line 795.
+ 1 APPPATH\Controllers\Empresa.php(795): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 795)
+ 2 APPPATH\Controllers\Empresa.php(616): App\Controllers\Empresa->getCamposConfig('1', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', 'B', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 17:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 17:03:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(600): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', 'B', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-30 17:03:14 --> ErrorException: Undefined array key "prm"
+in APPPATH\Controllers\Empresa.php on line 795.
+ 1 APPPATH\Controllers\Empresa.php(795): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 795)
+ 2 APPPATH\Controllers\Empresa.php(616): App\Controllers\Empresa->getCamposConfig('1', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', 'B', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 17:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 17:16:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(38): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('1-110301')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 17:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 17:16:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(600): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-30 17:16:40 --> ErrorException: Undefined array key "prm"
+in APPPATH\Controllers\Empresa.php on line 795.
+ 1 APPPATH\Controllers\Empresa.php(795): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 795)
+ 2 APPPATH\Controllers\Empresa.php(616): App\Controllers\Empresa->getCamposConfig('0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 17:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 17:17:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(600): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-30 17:17:54 --> ErrorException: Undefined array key "prm"
+in APPPATH\Controllers\Empresa.php on line 795.
+ 1 APPPATH\Controllers\Empresa.php(795): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 795)
+ 2 APPPATH\Controllers\Empresa.php(616): App\Controllers\Empresa->getCamposConfig('0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 17:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 17:26:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(38): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->index('1-110301')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 17:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 17:26:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(600): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', '1--', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-30 17:26:23 --> ErrorException: Undefined array key "prm"
+in APPPATH\Controllers\Empresa.php on line 789.
+ 1 APPPATH\Controllers\Empresa.php(789): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 789)
+ 2 APPPATH\Controllers\Empresa.php(616): App\Controllers\Empresa->getCamposConfig('B', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', '1--', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 17:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 17:26:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(600): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '2', '102--', 'B', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-30 17:26:45 --> ErrorException: Undefined array key "prm"
+in APPPATH\Controllers\Empresa.php on line 789.
+ 1 APPPATH\Controllers\Empresa.php(789): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 789)
+ 2 APPPATH\Controllers\Empresa.php(616): App\Controllers\Empresa->getCamposConfig('B', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '2', '102--', 'B', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 17:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-30 17:27:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Empresa::$indexdeto is deprecated in APPPATH\Controllers\Empresa.php on line 1098.
+ 1 APPPATH\Controllers\Empresa.php(1057): App\Controllers\Empresa->_index()
+ 2 APPPATH\Controllers\Empresa.php(600): App\Controllers\Empresa->_param('1-110301')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', '1--', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-30 17:27:09 --> ErrorException: Undefined array key "prm"
+in APPPATH\Controllers\Empresa.php on line 789.
+ 1 APPPATH\Controllers\Empresa.php(789): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prm"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Empresa.php', 789)
+ 2 APPPATH\Controllers\Empresa.php(616): App\Controllers\Empresa->getCamposConfig('B', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Empresa->actualizar('1-110301', '1', '1--', 'B', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-04-30 17:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-30 17:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

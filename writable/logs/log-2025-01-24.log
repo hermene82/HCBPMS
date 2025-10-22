@@ -1,0 +1,527 @@
+INFO - 2025-01-24 21:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 21:53:35 --> CSRF token verified.
+INFO - 2025-01-24 21:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-24 21:53:35 --> Error: Class "App\Controllers\UsersModel" not found
+in APPPATH\Controllers\Users.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 21:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 21:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 21:55:25 --> CSRF token verified.
+INFO - 2025-01-24 21:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-24 21:55:25 --> Error: Class "App\Controllers\UsersModel" not found
+in APPPATH\Controllers\Users.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 21:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 22:00:04 --> CSRF token verified.
+INFO - 2025-01-24 22:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-24 22:00:04 --> Error: Class "App\Controllers\UsersModel" not found
+in APPPATH\Controllers\Users.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 22:01:26 --> CSRF token verified.
+INFO - 2025-01-24 22:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-24 22:01:26 --> Error: Call to undefined function App\Controllers\ramdom_bytes()
+in APPPATH\Controllers\Users.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 22:03:48 --> CSRF token verified.
+INFO - 2025-01-24 22:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-24 22:03:48 --> ErrorException: Undefined array key "usrer"
+in APPPATH\Controllers\Users.php on line 33.
+ 1 APPPATH\Controllers\Users.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usrer"', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Users.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 22:04:24 --> CSRF token verified.
+INFO - 2025-01-24 22:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 22:04:24 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\inetpub\wwwroot\HCbpms\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\inetpub\wwwroot\HCbpms\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\inetpub\wwwroot\HCbpms\system\BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 C:\inetpub\wwwroot\HCbpms\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\inetpub\wwwroot\HCbpms\app\Controllers\Users.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(943): App\Controllers\Users->create()
+#9 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\inetpub\wwwroot\HCbpms\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-24 22:04:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:password:, :name:, :email:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Users.php(32): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-24 22:04:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'$2y$10$yXDLM88jmgOy/RKAMSKpBuS97HfNVDl5JxrSfR7DWzQGNIvwv87ve\', \'julio\', \'jhc180y@yahoo.com\', 0, \'9835984bd5139f45d7485a7eb5d9f6fca6695107\', \'2025-01-24 22:04:24\', \'2025-01-24 22:04:24\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'$2y$10$yXDLM88jmgOy/RKAMSKpBuS97HfNVDl5JxrSfR7DWzQGNIvwv87ve\', \'julio\', \'jhc180y@yahoo.com\', 0, \'9835984bd5139f45d7485a7eb5d9f6fca6695107\', \'2025-01-24 22:04:24\', \'2025-01-24 22:04:24\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:password:, :name:, :email:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Users.php(32): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-24 22:04:24 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `users` (`password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'$2y$10$yXDLM88jmgOy/RKAMSKpBuS97HfNVDl5JxrSfR7DWzQGNIvwv87ve\', \'julio\', \'jhc180y@yahoo.com\', 0, \'9835984bd5139f45d7485a7eb5d9f6fca6695107\', \'2025-01-24 22:04:24\', \'2025-01-24 22:04:24\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'$2y$10$yXDLM88jmgOy/RKAMSKpBuS97HfNVDl5JxrSfR7DWzQGNIvwv87ve\', \'julio\', \'jhc180y@yahoo.com\', 0, \'9835984bd5139f45d7485a7eb5d9f6fca6695107\', \'2025-01-24 22:04:24\', \'2025-01-24 22:04:24\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'$2y$10$yXDLM88jmgOy/RKAMSKpBuS97HfNVDl5JxrSfR7DWzQGNIvwv87ve\', \'julio\', \'jhc180y@yahoo.com\', 0, \'9835984bd5139f45d7485a7eb5d9f6fca6695107\', \'2025-01-24 22:04:24\', \'2025-01-24 22:04:24\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:password:, :name:, :email:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Users.php(32): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 22:07:15 --> CSRF token verified.
+INFO - 2025-01-24 22:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 22:07:15 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\inetpub\wwwroot\HCbpms\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\inetpub\wwwroot\HCbpms\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\inetpub\wwwroot\HCbpms\system\BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 C:\inetpub\wwwroot\HCbpms\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\inetpub\wwwroot\HCbpms\app\Controllers\Users.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(943): App\Controllers\Users->create()
+#9 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\inetpub\wwwroot\HCbpms\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-24 22:07:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:user:, :password:, :name:, :email:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Users.php(32): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-24 22:07:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'julio\', \'$2y$10$UFXy8zD.D98AnyHV82yWoewh8ivIsr97Pm7FuqdLO2y1h1LDMV0q2\', \'julio\', \'jhc180y@yahoo.com\', 0, \'d632080dc3e6d55c17ea1d432b3a7c6c482938e9\', \'2025-01-24 22:07:15\', \'2025-01-24 22:07:15\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'julio\', \'$2y$10$UFXy8zD.D98AnyHV82yWoewh8ivIsr97Pm7FuqdLO2y1h1LDMV0q2\', \'julio\', \'jhc180y@yahoo.com\', 0, \'d632080dc3e6d55c17ea1d432b3a7c6c482938e9\', \'2025-01-24 22:07:15\', \'2025-01-24 22:07:15\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:user:, :password:, :name:, :email:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Users.php(32): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-24 22:07:15 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'julio\', \'$2y$10$UFXy8zD.D98AnyHV82yWoewh8ivIsr97Pm7FuqdLO2y1h1LDMV0q2\', \'julio\', \'jhc180y@yahoo.com\', 0, \'d632080dc3e6d55c17ea1d432b3a7c6c482938e9\', \'2025-01-24 22:07:15\', \'2025-01-24 22:07:15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'julio\', \'$2y$10$UFXy8zD.D98AnyHV82yWoewh8ivIsr97Pm7FuqdLO2y1h1LDMV0q2\', \'julio\', \'jhc180y@yahoo.com\', 0, \'d632080dc3e6d55c17ea1d432b3a7c6c482938e9\', \'2025-01-24 22:07:15\', \'2025-01-24 22:07:15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'julio\', \'$2y$10$UFXy8zD.D98AnyHV82yWoewh8ivIsr97Pm7FuqdLO2y1h1LDMV0q2\', \'julio\', \'jhc180y@yahoo.com\', 0, \'d632080dc3e6d55c17ea1d432b3a7c6c482938e9\', \'2025-01-24 22:07:15\', \'2025-01-24 22:07:15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:user:, :password:, :name:, :email:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Users.php(32): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 22:07:16 --> CSRF token verified.
+INFO - 2025-01-24 22:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 22:07:16 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\inetpub\wwwroot\HCbpms\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\inetpub\wwwroot\HCbpms\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\inetpub\wwwroot\HCbpms\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\inetpub\wwwroot\HCbpms\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\inetpub\wwwroot\HCbpms\system\BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 C:\inetpub\wwwroot\HCbpms\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\inetpub\wwwroot\HCbpms\app\Controllers\Users.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(943): App\Controllers\Users->create()
+#9 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\inetpub\wwwroot\HCbpms\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\inetpub\wwwroot\HCbpms\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-24 22:07:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:user:, :password:, :name:, :email:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Users.php(32): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-24 22:07:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'julio\', \'$2y$10$629WsHV2mQAU5//y4eLXkOQC1oPUBVGphuovljwGW3xiMsh9G3oka\', \'julio\', \'jhc180y@yahoo.com\', 0, \'72a0c0ceb46130775b88cd4d77a8161b4a12498f\', \'2025-01-24 22:07:16\', \'2025-01-24 22:07:16\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'julio\', \'$2y$10$629WsHV2mQAU5//y4eLXkOQC1oPUBVGphuovljwGW3xiMsh9G3oka\', \'julio\', \'jhc180y@yahoo.com\', 0, \'72a0c0ceb46130775b88cd4d77a8161b4a12498f\', \'2025-01-24 22:07:16\', \'2025-01-24 22:07:16\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:user:, :password:, :name:, :email:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Users.php(32): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-24 22:07:16 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'julio\', \'$2y$10$629WsHV2mQAU5//y4eLXkOQC1oPUBVGphuovljwGW3xiMsh9G3oka\', \'julio\', \'jhc180y@yahoo.com\', 0, \'72a0c0ceb46130775b88cd4d77a8161b4a12498f\', \'2025-01-24 22:07:16\', \'2025-01-24 22:07:16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'julio\', \'$2y$10$629WsHV2mQAU5//y4eLXkOQC1oPUBVGphuovljwGW3xiMsh9G3oka\', \'julio\', \'jhc180y@yahoo.com\', 0, \'72a0c0ceb46130775b88cd4d77a8161b4a12498f\', \'2025-01-24 22:07:16\', \'2025-01-24 22:07:16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (\'julio\', \'$2y$10$629WsHV2mQAU5//y4eLXkOQC1oPUBVGphuovljwGW3xiMsh9G3oka\', \'julio\', \'jhc180y@yahoo.com\', 0, \'72a0c0ceb46130775b88cd4d77a8161b4a12498f\', \'2025-01-24 22:07:16\', \'2025-01-24 22:07:16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`user`, `password`, `name`, `email`, `active`, `activation_token`, `created_at`, `updated_at`) VALUES (:user:, :password:, :name:, :email:, :active:, :activation_token:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Users.php(32): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 22:10:14 --> CSRF token verified.
+INFO - 2025-01-24 22:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-24 22:10:14 --> Error: Call to undefined function App\Controllers\setSuject()
+in APPPATH\Controllers\Users.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 22:13:19 --> CSRF token verified.
+INFO - 2025-01-24 22:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 22:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 22:41:43 --> CSRF token verified.
+INFO - 2025-01-24 22:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-24 22:41:43 --> Error: Call to undefined function App\Controllers\setSubject()
+in APPPATH\Controllers\Users.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 22:45:29 --> CSRF token verified.
+INFO - 2025-01-24 22:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 22:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 22:46:37 --> CSRF token verified.
+INFO - 2025-01-24 22:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 22:46:39 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-01-24 22:46:39 --> 220 smtp.gmail.com ESMTP 6a1803df08f44-6e2058c54e4sm14582706d6.115 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-6e2058c54e4sm14582706d6.115 - gsmtp
+
+CRITICAL - 2025-01-24 22:46:39 --> ErrorException: Undefined variable $message
+in APPPATH\Controllers\Users.php on line 56.
+ 1 APPPATH\Controllers\Users.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\inetpub\\wwwroot\\HCbpms\\app\\Controllers\\Users.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 22:47:34 --> CSRF token verified.
+INFO - 2025-01-24 22:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 22:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 22:51:15 --> CSRF token verified.
+INFO - 2025-01-24 22:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 22:51:16 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-01-24 22:51:16 --> 220 smtp.gmail.com ESMTP 6a1803df08f44-6e2057a890fsm14665006d6.88 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-6e2057a890fsm14665006d6.88 - gsmtp
+
+CRITICAL - 2025-01-24 22:51:16 --> Error: Undefined constant "App\Controllers\data"
+in APPPATH\Controllers\Users.php on line 64.
+ 1 APPPATH\Controllers\Users.php(56): App\Controllers\Users->showMessage('Registro existoso', 'Revisa tu correo electronico para activar tu cuenta.')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Users->create()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 22:52:16 --> CSRF token verified.
+INFO - 2025-01-24 22:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 22:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 22:52:48 --> CSRF token verified.
+INFO - 2025-01-24 22:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 22:52:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-01-24 22:52:49 --> 220 smtp.gmail.com ESMTP d75a77b69052e-46e6cefeb37sm11132491cf.10 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d75a77b69052e-46e6cefeb37sm11132491cf.10 - gsmtp
+
+INFO - 2025-01-24 23:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:08:32 --> CSRF token verified.
+INFO - 2025-01-24 23:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 23:08:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-01-24 23:08:33 --> 220 smtp.gmail.com ESMTP ada2fe7eead31-4b7099710cfsm736951137.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ada2fe7eead31-4b7099710cfsm736951137.24 - gsmtp
+
+INFO - 2025-01-24 23:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:15:05 --> CSRF token verified.
+INFO - 2025-01-24 23:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 23:15:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-01-24 23:15:06 --> 220 smtp.gmail.com ESMTP a1e0cc1a2514c-864a9c417d7sm759310241.29 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a1e0cc1a2514c-864a9c417d7sm759310241.29 - gsmtp
+
+INFO - 2025-01-24 23:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:37:08 --> CSRF token verified.
+INFO - 2025-01-24 23:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 23:37:09 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-01-24 23:37:09 --> 220 smtp.gmail.com ESMTP 6a1803df08f44-6e20514ee03sm15081136d6.26 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-6e20514ee03sm15081136d6.26 - gsmtp
+
+CRITICAL - 2025-01-24 23:41:37 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('register', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-01-24 23:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:42:27 --> CSRF token verified.
+INFO - 2025-01-24 23:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 23:42:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-01-24 23:42:28 --> 220 smtp.gmail.com ESMTP 71dfb90a1353d-51e4ebea49bsm648188e0c.44 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 71dfb90a1353d-51e4ebea49bsm648188e0c.44 - gsmtp
+
+INFO - 2025-01-24 23:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:46:58 --> CSRF token verified.
+INFO - 2025-01-24 23:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:47:43 --> CSRF token verified.
+INFO - 2025-01-24 23:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 23:47:44 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-01-24 23:47:44 --> 220 smtp.gmail.com ESMTP ada2fe7eead31-4b70999d0bfsm743262137.25 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ada2fe7eead31-4b70999d0bfsm743262137.25 - gsmtp
+
+INFO - 2025-01-24 23:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 23:58:34 --> CSRF token verified.
+INFO - 2025-01-24 23:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-24 23:58:35 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-01-24 23:58:35 --> 220 smtp.gmail.com ESMTP d75a77b69052e-46e66b84d96sm17113801cf.70 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:bf0:8066:1066:89f9:f430:6531:d56c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d75a77b69052e-46e66b84d96sm17113801cf.70 - gsmtp
+

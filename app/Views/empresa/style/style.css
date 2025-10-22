@@ -1,0 +1,393 @@
+p{
+    background-color: #DADADA;
+    padding:5px 18px
+}
+
+.lnk_btn {
+text-decoration: none;
+background:-moz-linear-gradient(#f9f9f9 0%,#DADADA 100%);
+background:-ms-linear-gradient(#f9f9f9 0%,#DADADA 100%); 
+background:-o-linear-gradient(#f9f9f9 0%,#DADADA 100%); 
+background:-webkit-linear-gradient(#f9f9f9 0%,#DADADA 100%); 
+background:linear-gradient(#f9f9f9 0%,#DADADA 100%);
+border:solid 1px #DEDEDE; 
+border-radius:5px;
+text-align:center;
+padding:5px; 
+color:#333; 
+width:75px; 
+} 
+.lnk_btn:hover{
+background:-moz-linear-gradient(#fff 0%,#DEDEDE 100%);
+color:#999; 
+}
+
+#lnk_act {
+    display: block;
+    text-indent: -9999px;
+    background:url("../images/act.png") no-repeat;
+    background-size:contain;
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    position: 0;
+    float: left;
+}
+
+#lnk_eli {
+    display: block;
+    text-indent: -9999px;
+    background:url("../images/eli.png") no-repeat ;
+    background-size:contain;
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    position: 0;
+    float: left;
+}
+
+#lnk_imp {
+    display: block;
+    text-indent: -9999px;
+    background:url("../images/imp.png") no-repeat ;
+    background-size:contain;
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    position: 0;
+    float: left;
+}
+
+#lnk_sri {
+    display: block;
+    text-indent: -9999px;
+    background:url("../images/sri.png") no-repeat ;
+    background-size:contain;
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    position: 0;
+    float: left;
+}
+
+ul {
+    /*width:750px;*/
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+li{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+/*
+.field label {
+    color: #555555;
+    display: inline-block;
+    float: left;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 3px;
+    padding: 3px;
+    width: 90px;
+}
+
+.field input {
+    height:20px;
+    width:220px;
+    padding:5px 8px;
+}
+.field textarea {
+    padding:8px;
+    width:300px;
+}
+.field button {
+    margin-left:90px;
+}
+
+.field input,  textarea {
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+    color: #888;
+    font-size: 12px;
+    padding-right:30px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+.field input:focus, textarea:focus {
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    padding-right:80px;
+}
+.field input:required:valid,  textarea:required:valid {
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+.field input:focus:invalid,  textarea:focus:invalid {
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+.field button.submit {
+    padding: 9px 17px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #444;
+    border: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+    background-image: -moz-linear-gradient(0% 100% 90deg, #BBBBBB, #FFFFFF);
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.field button.submit:hover {
+    opacity:.55;
+    cursor: pointer;
+    color: #fff;
+}
+.field button.submit:active {
+    border: 1px solid #222;
+    box-shadow: 0 0 10px 5px #444 inset;
+}*/
+fieldset.field_set_main
+{
+    /*border-bottom-width:30px;
+    border-top-width:100px;*/
+    border-left-width:0px;
+    border-right-width:0px;
+    margin:auto;
+    /*width:1300px;
+    height:700px;*/
+    padding:0px 0px 0px 0px;
+    border-color:#FFD633;
+    border-style:outset;
+    display:table;
+}
+
+legend.header
+{
+    text-align:left;
+}
+
+
+h4{
+    background-color: #FFD633;
+    padding:5px ;
+}
+
+/*  *{
+    margin:0px;
+    padding:0px;
+    font-family: verdana;
+    color:#bcbcbc;
+}*/
+
+body{
+
+}
+
+/*menu lateral*/
+
+div#barra-lateral{
+    position:fixed;
+    width:65px;
+    height:100%;
+    background-color:#2f3030;
+    overflow:hidden;
+    -webkit-transition:width 0.5s cubic-bezier(.61,.01,.37,1);
+}
+
+div#barra-lateral:hover{
+    width:170px;
+}
+
+div#logo-menu{
+    width:40px;
+    height:40px;
+    margin:10px;
+    background-image:url(../images/menu.png);
+}
+
+div#contenedor-logos-primero{
+    margin-top:70px;
+}
+
+div.contenedor-logos{
+    margin-top:20px;
+    margin-left:10px;
+    width:130px;
+    height:40px;
+
+}
+
+div.logo{
+    width:40px;
+    height:40px;
+    background-image:url(../images/menu.png);
+    float: left;
+}
+
+p.title-menu{
+    margin-left:60px;
+    line-height: 40px;
+}
+
+/*body*/
+
+div#body{
+}
+
+div#texto{
+    width:50%;
+    min-height:300px;
+    float:left;
+}
+
+p#texto-contenedor-1{
+    font-size:25px;
+    margin:30px;
+    margin-top:50px;
+    color:#595959;
+}
+
+div#foto{
+    width:50%;
+    height:300px;
+    float:right;
+}
+
+img#foto-contenedor-1{
+    margin:auto;
+    margin-top:15px;
+    width:300px;
+    display:block;
+}
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    /*display: none;*/
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.contenido
+{
+	/*position: absolute;*/
+
+	/*nos posicionamos en el centro del navegador*/
+
+	/*top:50%;*/
+
+	/*left:50%;*/
+
+	/*determinamos una anchura*/
+
+	/*width:400px;*/
+
+	/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+
+	/*margin-left:-200px;*/
+
+	/*determinamos una altura*/
+
+	/*height:300px;*/
+
+	/*indicamos que el margen superior, es la mitad de la altura*/
+
+	/*margin-top:-150px;*/
+
+	/*border:1px solid #808080;*/
+
+	/*padding:5px;*/
+
+}
+
+#lnk_det {
+
+
+    display: block;
+    text-indent: -9999px;
+    background:url("../images/details_open.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    position: 0;
+    float: left;
+    /*background: url('../images/details_open.png') no-repeat center center;*/
+    /*cursor: pointer;*/
+}
+tr.shown #lnk_det {
+        display: block;
+    text-indent: -9999px;
+    background:url("../images/details_close.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    position: 0;
+    float: left;
+    /*background: url('../images/details_close.png') no-repeat center center;*/
+}
+
+/*
+Full screen Modal 
+*/
+.fullscreen-modal .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .fullscreen-modal .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .fullscreen-modal .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .fullscreen-modal .modal-dialog {
+     width: 1170px;
+  }
+}
+
