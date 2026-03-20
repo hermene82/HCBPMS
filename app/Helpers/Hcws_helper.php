@@ -20,7 +20,7 @@ function WSconsume($proceso){
     //------echo print_r($peticionJ,true);  
 
                     //$url = 'http://192.168.100.8/hcws/apis/api/v1/SolicitudDatos';	
-                    $url = 'http://192.168.100.8/HCbdws/apis/api/v1/SolicitudDatos';			
+                    $url = 'http://192.168.10.8/HCbdws/apis/api/v1/SolicitudDatos';			
 					//url inicializa
 					$ch = curl_init();			
 					curl_setopt($ch,CURLOPT_URL, $url);
