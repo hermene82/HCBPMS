@@ -44,6 +44,18 @@ $menu = $session->get('userMenu'); // Obtiene el nombre del usuario de la sesió
                 <div class="dropdown-menu" aria-labelledby="userDropdown" style="width: 200px;">
                     <a class="dropdown-item" href="<?= base_url('/perfil') ?>">Perfil</a>
                     <div class="dropdown-divider"></div>
+                    <?php $empresaLista = session('empresaLista') ?? []; ?>
+                    <?php $empresaIdActual = session('empresaId'); ?>
+
+                    <select id="cmbEmpresaPerfil" class="form-control" onchange="cambiarEmpresa(this.value)">
+                        <?php foreach ($empresaLista as $empresa): ?>
+                            <option value="<?= esc($empresa['IDEMPRESA']) ?>"
+                                <?= ($empresaIdActual == $empresa['IDEMPRESA']) ? 'selected' : '' ?>>
+                                <?= esc($empresa['NOMEMPRESA']) ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item text-danger" href="<?= base_url('/logout') ?>">
                         <i class="fas fa-sign-out-alt"></i> Cerrar sesión
                     </a>

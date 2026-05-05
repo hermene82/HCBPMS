@@ -4,11 +4,11 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // transaccion - manteninmiento producto modulo transaccion
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-function ConfigTransacc110301(){
+function ConfigTransacc110102(){
 
     $tablao = 'hc.admin_transaccion';
     $produc = '1';
-    $transa = '110301';
+    $transa = '110102';
 
     $structo = [
         ['base' => 'admin', 'nombre' => 'clista', 'metodo' => '0|0|0|0', 'join' => ''],
@@ -40,19 +40,19 @@ function ConfigTransacc110301(){
     ];
 
     $camposo_campos = [
-        [ 'IDTRANSACCION'	, 'Transacion', 'TXT', '3', '1', '1|0|1|0|0|0|0|0|0|', '-E SECUENCIA '.$tablao.'-'  ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'IDPRODUCTO'		, 'Producto'  , 'CBO', '3', '0', '1|1|1|0|0|1|PRODUCTO--|0|0|', ''                  ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'IDMODULO'		, 'moodulo'   , 'CBO', '3', '0', '1|1|1|0|0|1|MODULO--|0|0|', ''                    ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'NOMBRE'			, 'Nombre'    , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'DESCRIPCION'		, 'Descrip'   , 'TXT', '3', '0', '0|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'RUTA'			, 'Ruta'      , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'PERMISO'		    , 'Permiso'   , 'CBO', '3', '0', '1|1|1|0|0|0|PER--|0|0|', ''                       ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'REFERENCIA'		, 'Refer'     , 'TXT', '3', '0', '0|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'ESTADO'			, 'Estado'    , 'CBO', '3', '0', '1|1|1|0|0|0|BAI--|0|0|', ''                       ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'USUCRA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'FCHCREA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'USUMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
+        [ 'IDTRANSACCION'	, 'Transacion', 'TXT', '10' , '1', '1|1|1|0|0|0|0|0|0|',          ''                  ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'IDPRODUCTO'		, 'Producto'  , 'CBO', '10' , '0', '1|1|1|0|0|1|PRODUCTO--|0|0|', ''                  ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'IDMODULO'		, 'moodulo'   , 'CBO', '10' , '0', '1|1|1|0|0|1|MODULO--|0|0|', ''                    ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'NOMBRE'			, 'Nombre'    , 'TXT', '200', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'DESCRIPCION'		, 'Descrip'   , 'TXT', '200', '0', '0|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'RUTA'			, 'Ruta'      , 'TXT', '500', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'PERMISO'		    , 'Permiso'   , 'CBO', '100', '0', '1|1|1|0|0|0|PER--|0|0|', ''                       ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'REFERENCIA'		, 'Refer'     , 'TXT', '200', '0', '0|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'ESTADO'			, 'Estado'    , 'CBO', '3'  , '0', '1|1|1|0|0|1|BAI--|0|0|', ''                       ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'USUCRA'			, 'Nombre'    , 'TXT', '100', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'FCHCREA'			, 'Nombre'    , 'TXT', '20' , '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'USUMODIF'		, 'Nombre'    , 'TXT', '100', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '20' , '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
         ];
 
     $camposboto = [
@@ -83,27 +83,27 @@ function ConfigTransacc110301(){
     ];
     $camposboto_campos = [
         [ // Primer bloque de campos
-            [ 'IDPRODUCTO'		, 'Producto'  , 'TXT', '3', '1', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'NOMBRE'			, 'Nombre'    , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'DESCRIPCION'		, 'Descrip'   , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'REFERENCIA'		, 'Refer'     , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'ESTADO'			, 'Estado'    , 'CBO', '3', '0', '1|1|1|0|0|1|BAI--|0|0|', ''                       ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'USUCRA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'FCHCREA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'USUMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
+            [ 'IDPRODUCTO'		, 'Producto'  , 'TXT', '10', '1', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'NOMBRE'			, 'Nombre'    , 'TXT', '200', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'DESCRIPCION'		, 'Descrip'   , 'TXT', '200', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'REFERENCIA'		, 'Refer'     , 'TXT', '200', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'ESTADO'			, 'Estado'    , 'CBO', '3', '0', '1|1|1|0|0|1|BAI--|0|0|', ''                       ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'USUCRA'			, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'FCHCREA'			, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'USUMODIF'		, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
         ],
         [ // Segundo bloque de campos
-            [ 'IDMODULO'		, 'Producto'  , 'TXT', '3', '1', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'IDPRODUCTO'		, 'Producto'  , 'CBO', '3', '0', '1|1|1|0|0|0|PRODUCTO--|0|0|', ''                  ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'NOMBRE'			, 'Nombre'    , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'DESCRIPCION'		, 'Descrip'   , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'REFERENCIA'		, 'Refer'     , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'ESTADO'			, 'Estado'    , 'CBO', '3', '0', '1|1|1|0|0|1|BAI--|0|0|', ''                       ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'USUCRA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'FCHCREA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'USUMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
+            [ 'IDMODULO'		, 'Producto'  , 'TXT', '10', '1', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'IDPRODUCTO'		, 'Producto'  , 'CBO', '10', '0', '1|1|1|0|0|1|PRODUCTO--|0|0|', ''                  ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'NOMBRE'			, 'Nombre'    , 'TXT', '100', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'DESCRIPCION'		, 'Descrip'   , 'TXT', '100', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'REFERENCIA'		, 'Refer'     , 'TXT', '100', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'ESTADO'			, 'Estado'    , 'CBO', '3', '0', '1|1|1|0|0|1|BAI--|0|0|', ''                       ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'USUCRA'			, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'FCHCREA'			, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'USUMODIF'		, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
         ]
     ];
         
@@ -139,6 +139,9 @@ return $config;
 
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// usuario - manteninmiento usuario rol roltransaccion  usuarioRol
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function ConfigTransacc110101(){
 
     $tablao = 'hc.admin_usuario';
@@ -175,12 +178,12 @@ function ConfigTransacc110101(){
     ];
 
     $camposo_campos = [
-        [ 'ID'	     , 'ID'      , 'TXT', '3', '1', '1|0|1|0|0|0|0|0|0|', '-E SECUENCIA '.$tablao.'-'  ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'USER'	 , 'Usuario' , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'PASSWORD' , 'clave'   , 'TXT', '3', '0', '0|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'NAME'	 , 'Nombre'  , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'EMAIL'	 , 'Correo'  , 'TXT', '3', '0', '0|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'ESTADO'	 , 'Estado'  , 'CBO', '3', '0', '1|1|1|0|0|0|BAI--|0|0|', ''                       ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
+        [ 'ID'	     , 'ID'      , 'TXT', '10',  '1', '1|0|1|0|0|0|0|0|0|', '-E SECUENCIA '.$tablao.'-'  ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'USER'	 , 'Usuario' , 'TXT', '20',  '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'PASSWORD' , 'clave'   , 'TXT', '60',  '0', '0|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'NAME'	 , 'Nombre'  , 'TXT', '200', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'EMAIL'	 , 'Correo'  , 'TXT', '200', '0', '0|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        //[ 'ESTADO'	 , 'Estado'  , 'CBO', '1',   '0', '1|1|1|0|0|0|BAI--|0|0|', ''                       ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
         ];
 
     $camposboto = [
@@ -211,28 +214,28 @@ function ConfigTransacc110101(){
     ];
     $camposboto_campos = [
         [ // Primer bloque de campos
-            [ 'IDROL'		    , 'Rol'       , 'TXT', '3', '1', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'IDEMPRESA'       , 'Empresa'   , 'CBO', '3', '1', '1|1|1|0|0|1|EMPRESA--|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'NOMBRE'			, 'Nombre'    , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'DESCRIPCION'		, 'Descrip'   , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'REFERENCIA'		, 'Refer'     , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'ESTADO'			, 'Estado'    , 'CBO', '3', '0', '1|1|1|0|0|1|BAI--|0|0|', ''                       ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'USUCRA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'FCHCREA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'USUMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
+            [ 'IDROL'		    , 'Rol'       , 'TXT', '10', '1', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'IDEMPRESA'       , 'Empresa'   , 'CBO', '10', '1', '1|1|1|0|0|1|EMPRESA--|0|0|', ''                   ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'NOMBRE'			, 'Nombre'    , 'TXT', '200','0', '1|1|1|0|0|0|0|0|0|', ''                          ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'DESCRIPCION'		, 'Descrip'   , 'TXT', '200','0', '1|1|1|0|0|0|0|0|0|', ''                          ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'REFERENCIA'		, 'Refer'     , 'TXT', '200','0', '1|1|1|0|0|0|0|0|0|', ''                          ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'ESTADO'			, 'Estado'    , 'CBO', '1',  '0', '1|1|1|0|0|1|BAI--|0|0|', ''                        ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'USUCRA'			, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'FCHCREA'			, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'USUMODIF'		, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
         ],
         [ // Segundo bloque de campos
-            [ 'IDEMPRESA'		, 'Producto'  , 'CBO', '3', '1', '1|1|1|0|0|1|EMPRESA--|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'IDROL'		    , 'Producto'  , 'CBO', '3', '1', '1|1|1|0|0|0|ROL--|0|0|', ''                  ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'IDTRANSACCION'	, 'Nombre'    , 'CBO', '3', '1', '1|1|1|0|0|0|TRANSACCION--|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'PERMISO'		    , 'Descrip'   , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'REFERENCIA'		, 'Refer'     , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'ESTADO'			, 'Estado'    , 'CBO', '3', '0', '1|1|1|0|0|1|BAI--|0|0|', ''                       ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'USUCRA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'FCHCREA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'USUMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-            [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
+            [ 'IDEMPRESA'		, 'Producto'  , 'CBO', '10', '1', '1|1|1|0|0|1|EMPRESA--|0|0|', ''                   ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'IDROL'		    , 'Producto'  , 'CBO', '10', '1', '1|1|1|0|0|1|ROL--|0|0|', ''                       ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'IDTRANSACCION'	, 'Nombre'    , 'CBO', '10', '1', '1|1|1|0|0|1|TRANSACCION--|0|0|', ''               ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'PERMISO'		    , 'Descrip'   , 'TXT', '10', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'REFERENCIA'		, 'Refer'     , 'TXT', '200','0', '1|1|1|0|0|0|0|0|0|', ''                          ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'ESTADO'			, 'Estado'    , 'CBO', '1',  '0', '1|1|1|0|0|1|BAI--|0|0|', ''                        ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'USUCRA'			, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'FCHCREA'			, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'USUMODIF'		, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+            [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '20', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
         ]
     ];
         
@@ -244,27 +247,52 @@ function ConfigTransacc110101(){
     
     $camposdeto = [
         [
-            'tabla' => 'admin.admin_rol_usuario',
+            'title' => 'Usuario-Rol',
+            'tabla' => 'hc.admin_rol_usuario',
             'where' => [],
-            'join' => ['join'=> $tablao.' b','on'=>'IDUSUARIO = b.ID','type','inner'],
+            'relacion' => ['ID' => 'IDUSUARIO'],
+            'join' => [],
+            'sp'=>[],
+            'prm' => 'dlista|pr_con_dlista|param SQLT_CHR -1 ,r_curso OCI_B_CURSOR -1||admin.dlista', 
+            'cmp' => []
+        ],
+        [
+            'title' => 'Usuario-Empresa',
+            'tabla' => 'hc.admin_usuario_empresa',
+            'where' => [],
+            'relacion' => ['ID' => 'IDUSUARIO'],
+            'join' => [],
             'sp'=>[],
             'prm' => 'dlista|pr_con_dlista|param SQLT_CHR -1 ,r_curso OCI_B_CURSOR -1||admin.dlista', 
             'cmp' => []
         ]
+
     ];
     
     $camposdeto_campos = [
         [
-        [ 'IDEMPRESA'		, 'Producto'  , 'CBO', '3', '1', '1|1|1|0|0|0|EMPRESA--|0|0|', ''                   ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'IDROL'		    , 'Producto'  , 'CBO', '3', '1', '1|1|1|0|0|0|ROL--|0|0|', ''                       ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'IDUSUARIO'		, 'Nombre'    , 'CBO', '3', '1', '1|1|1|0|0|0|USUARIO--|0|0|', ''                   ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'REFERENCIA'		, 'Refer'     , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'ESTADO'			, 'Estado'    , 'CBO', '3', '0', '1|1|1|0|0|1|BAI--|0|0|', ''                       ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'USUCRA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'FCHCREA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'USUMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
-        [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="3" style="width:100%" required readonly'],
+        [ 'IDROLUSUARIO'    , 'Id'        , 'TXT', '3', '1', '1|1|1|0|0|0|0|0|0|', ''                       ,'trim|required', '', 'size="30" style="width:100%" required readonly'],    
+        [ 'IDEMPRESA'		, 'Empresa'   , 'CBO', '3', '0', '1|1|1|0|0|1|EMPRESA--|0|0|', ''                   ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'IDROL'		    , 'Rol'       , 'CBO', '3', '0', '1|1|1|0|0|1|ROL--|0|0|', ''                       ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'IDUSUARIO'		, 'Usuario'   , 'CBO', '3', '0', '1|1|1|0|0|1|USUARIO--|0|0|', ''                   ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'REFERENCIA'		, 'Refer'     , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'ESTADO'			, 'Estado'    , 'CBO', '3', '0', '1|1|1|0|0|1|BAI--|0|0|', ''                       ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'USUCRA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'FCHCREA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'USUMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        ],
+        [
+        [ 'IDUSUARIO'		, 'Usuario'   , 'CBO', '3', '1', '1|1|1|0|0|1|USUARIO--|0|0|', ''                   ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'IDEMPRESA'		, 'Empresa'   , 'CBO', '3', '1', '1|1|1|0|0|1|EMPRESA--|0|0|', ''                   ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'REFERENCIA'		, 'Refer'     , 'TXT', '3', '0', '1|1|1|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'ESTADO'			, 'Estado'    , 'CBO', '3', '0', '1|1|1|0|0|1|BAI--|0|0|', ''                       ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'USUCRA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'FCHCREA'			, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'USUMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
+        [ 'FCHMODIF'		, 'Nombre'    , 'TXT', '3', '0', '0|0|0|0|0|0|0|0|0|', ''                           ,'trim|required', '', 'size="30" style="width:100%" required readonly'],
         ]
+
     ];
 
 

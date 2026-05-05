@@ -127,6 +127,63 @@ function WSconsume($proceso){
 
 
         switch ($dic) {
+            case 'USUARIO':
+                $select = 'u.idtransaccion as DDIC_LISTA, u.nombre as DDIC_NOMBRE';  
+                $proceso = array( array('idProceso' => '0',
+                'proceso' => 'CON',
+                'type' => 'TB',
+                'struct' =>'hc.admin_usuario AS u',
+                'condicion' => array('select'=> $select,
+                                    'where'=>  '',
+                                    'wherein'=>'',
+                                    'join'=> ''
+                                    ),
+                'data' => '',
+                'id' => '',
+                'param' => '',
+                'usuario'=>'JULIO',
+                'transaccion'=>'00000',
+                'referencia'=>'cat'
+                ));
+                break;
+            case 'TRANSACCION':
+                $select = 't.idtransaccion as DDIC_LISTA, t.nombre as DDIC_NOMBRE';  
+                $proceso = array( array('idProceso' => '0',
+                'proceso' => 'CON',
+                'type' => 'TB',
+                'struct' =>'hc.admin_transaccion AS t',
+                'condicion' => array('select'=> $select,
+                                    'where'=>  '',
+                                    'wherein'=>'',
+                                    'join'=> ''
+                                    ),
+                'data' => '',
+                'id' => '',
+                'param' => '',
+                'usuario'=>'JULIO',
+                'transaccion'=>'00000',
+                'referencia'=>'cat'
+                ));
+                break;
+            case 'ROL':
+                $select = 'r.idrol as DDIC_LISTA, r.nombre as DDIC_NOMBRE';  
+                $proceso = array( array('idProceso' => '0',
+                'proceso' => 'CON',
+                'type' => 'TB',
+                'struct' =>'hc.admin_rol AS r',
+                'condicion' => array('select'=> $select,
+                                    'where'=>  '',
+                                    'wherein'=>'',
+                                    'join'=> ''
+                                    ),
+                'data' => '',
+                'id' => '',
+                'param' => '',
+                'usuario'=>'JULIO',
+                'transaccion'=>'00000',
+                'referencia'=>'cat'
+                ));
+                break;
             case 'CLIENTE':
                 $select = 'a.codigo as DDIC_LISTA,a.comercial as DDIC_NOMBRE';  
                 $proceso = array( array('idProceso' => '0',
@@ -214,9 +271,19 @@ function WSconsume($proceso){
 
 
         $respuesta = json_decode(WSconsume($proceso));
-        //$consulta =  json_decode(json_encode($response->respuesta),true);
-        //return $respuesta[0]->response;
-        return  json_decode(json_encode($respuesta[0]->response->respuesta),true);
+
+        if (isset($respuesta[0]) && isset($respuesta[0]->response) && isset($respuesta[0]->response->respuesta)) {
+            $respuestaArray = json_decode(json_encode($respuesta[0]->response->respuesta), true);
+
+            // Convertimos todas las claves del array a mayúsculas
+            $respuestaArray = array_map(function($item) {
+                return array_change_key_case($item, CASE_UPPER);
+            }, $respuestaArray);
+    
+            return $respuestaArray;
+        } else {
+            return null;  // O cualquier valor por defecto
+        }
 
     }
 
@@ -262,10 +329,11 @@ function WSconsume($proceso){
         return  json_decode(json_encode($respuesta[0]->response->respuesta),true);
     }
 
-    function r_emp($id,$tabla){
+    function r_emp($id,$tabla,$join = []){
         //$this->db->where($id);
         //$query = $this->db->get($tabla);
         //return $query;
+        $joinParam = (is_array($join) && !empty($join)) ? $join : '';
         $proceso = array( array('idProceso' => '0',
                                 'proceso' => 'CON',
                                 'type' => 'TB',
@@ -273,7 +341,7 @@ function WSconsume($proceso){
                                 'condicion' => array('select'=>'',
                                                      'where'=> $id,
                                                      'wherein'=>'',
-                                                     'join'=>''),
+                                                     'join'=>$joinParam),
                                 'data' => '',
                                 'id' => '',
                                 'param' => '',
@@ -283,14 +351,20 @@ function WSconsume($proceso){
                         ));
 
         $respuesta = json_decode(WSconsume($proceso));
-        //return $respuesta[0]->response;
-        //echo print_r($respuesta[0]->response,true);
-        //return  json_decode(json_encode($respuesta[0]->response->respuesta),true);
+
         if (isset($respuesta[0]) && isset($respuesta[0]->response) && isset($respuesta[0]->response->respuesta)) {
-            return json_decode(json_encode($respuesta[0]->response->respuesta), true);
+            $respuestaArray = json_decode(json_encode($respuesta[0]->response->respuesta), true);
+
+            // Convertimos todas las claves del array a mayúsculas
+            $respuestaArray = array_map(function($item) {
+                return array_change_key_case($item, CASE_UPPER);
+            }, $respuestaArray);
+    
+            return $respuestaArray;
         } else {
             return null;  // O cualquier valor por defecto
         }
+
     }
 
     function r_emps($id,$tabla,$select){
@@ -338,8 +412,23 @@ function WSconsume($proceso){
                         ));
 
         $respuesta = json_decode(WSconsume($proceso));
+        //log_message('debug', 'r_empo-proceso: ' . print_r($proceso, true));
+        //log_message('debug', 'r_empo-respuesta: ' . print_r($respuesta, true));
         //return $respuesta[0]->response;
-        return  json_decode(json_encode($respuesta[0]->response->respuesta),true);
+        //return  json_decode(json_encode($respuesta[0]->response->respuesta),true);
+        if (isset($respuesta[0]) && isset($respuesta[0]->response) && isset($respuesta[0]->response->respuesta)) {
+            $respuestaArray = json_decode(json_encode($respuesta[0]->response->respuesta), true);
+
+            // Convertimos todas las claves del array a mayúsculas
+            $respuestaArray = array_map(function($item) {
+                return array_change_key_case($item, CASE_UPPER);
+            }, $respuestaArray);
+    
+            return $respuestaArray;
+        } else {
+            return null;  // O cualquier valor por defecto
+        }
+
     }
 	
 
@@ -500,7 +589,7 @@ function WSconsume($proceso){
             $pro[] =  array('idProceso' => $r ,
                 'proceso' => 'PRO',
                 'type' => 'SP',
-                'struct' => 'admin.consulta_catalogo',
+                'struct' => 'hc.admin_consulta_catalogo',
                 'condicion' => '',
                 'data' => '',
                 'id' => '',

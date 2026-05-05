@@ -200,7 +200,7 @@ if (isset($cat)) {
 //<fieldset class="field_set_main"  >
 //<ul>
  //<div class="field"> ?>
-<div class="form-row"> 
+<div class="form-grid"> 
 <form id = "form" autocomplete="off">   
 <?php foreach ($campos as $campo){ 
       //echo print_r($campo);

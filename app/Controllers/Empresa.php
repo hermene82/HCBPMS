@@ -44,126 +44,387 @@ class Empresa extends BaseController
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
 		function ___index(){
 			$data = [];
-			$data['car']  = $this->cargarDatosCatalogo();
-			$data['deff'] = [$this->cargarParametrosCampos()]; //campos x defecto
-			$data['bemp'] = $this->cargarConsultaBotones();
-			$data['emp']  = $this->procesarConsulta();
 			$data['config'] = $this->config;
-            $this->descripcionCatalogo($data['car'],$data['emp']);
-			view('empresa/emp_lst', $data);				
+			$data['car'] = $this->obtenerCatalogos();			
+			$data['deff'] = [$this->cargarParametrosCampos()]; //campos x defecto			
+			$data['emp']  = $this->cargarConsulta('');
+			$data['bemp'] = $this->cargarConsulta('B');
+			
+			log_message('debug', '___index-data: ' . print_r($data, true));
+			// Preparar índices para no armarlos en la vista
+			$data['emp']  = $this->agregarIndex(
+				$data['emp'],
+				[$this->config->r_campos] ?? []
+			);
+
+			$data['bemp'] = $this->agregarIndex(
+				$data['bemp'],
+				$this->config->r_camposbot ?? []
+			);
+
+			// Preparar estructuras de filtros e importación
+			$data['filtrosPreparados'] = $this->prepararCamposFormulario(
+				$this->config->r_filtros ?? null,
+				$data['car'],
+				$data['deff']
+			);
+
+			$data['importaPreparado'] = $this->prepararCamposFormulario(
+				$this->config->r_importa ?? null,
+				$data['car'],
+				$data['deff']
+			);
+
+			$this->descripcionCatalogo($data['car'],$data['emp']);
+			$this->descripcionCatalogo($data['car'],$data['bemp']);
+			
+			//log_message('debug', '___index-data: ' . print_r($data, true));
+			return view('empresa/emp_lst', $data);				
 		}
+	
 
-		function descripcionCatalogo(array $arrayA, array &$arrayB)
+		private function agregarIndex(array $bemp, array $camposbot): array
+		{	
+			if (!is_array($bemp) || count($bemp) === 0) {
+				return [];
+			}
+			if (!is_array($camposbot) || count($camposbot)  === 0 ) {
+				return [];
+			}
+
+			foreach ($camposbot as $ir => $botConfig) {
+				$tabla  = $botConfig['tabla'] ?? null;
+				$campos = $botConfig['cmp'] ?? [];
+
+				if (
+					!$tabla ||
+					!isset($bemp[$ir]['tabla']) ||
+					!isset($bemp[$ir]['datos']) ||
+					!is_array($bemp[$ir]['datos'])
+				) {
+					continue;
+				}
+
+				// Validar que el bloque corresponda a la tabla esperada
+				if ($bemp[$ir]['tabla'] !== $tabla) {
+					continue;
+				}
+
+				foreach ($bemp[$ir]['datos'] as $j => $fila) {
+					$index = '';
+
+					foreach ($campos as $campo) {
+						if (($campo['id'] ?? 0) == 1) {
+							$nombreCampo = strtoupper($campo['campo'] ?? '');
+							$index .= ($fila[$nombreCampo] ?? '') . '--';
+						}
+					}
+
+					$bemp[$ir]['datos'][$j]['_INDEX'] = $index;
+				}
+			}
+			return $bemp;
+		}
+		private function prepararCamposFormulario($estructura, array $catalogos, array $deff): array
 		{
-			$catConfig = $this->config->r_combo ?? [];
+			if (!is_array($estructura) || !isset($estructura['cmp']) || !is_array($estructura['cmp'])) {
+				return [];
+			}
 
-			// 1. Construir el mapa de catálogos: [CAT] => [codigo => nombre]
-			$catalogos = [];
+			$campos = $estructura['cmp'];
 
-			foreach ($arrayA as $catalogoTipo) {
-				foreach ($catalogoTipo as $cat => $items) {
-					foreach ($items as $item) {
-						$codigo = (string) $item['DDIC_LISTA'];
-						$nombre = $item['DDIC_NOMBRE'];
-						$catalogos[$cat][$codigo] = $nombre;
+			foreach ($campos as $rc => $campo) {
+				$nombreCampo = strtoupper($campo['campo'] ?? '');
+
+				foreach ($campo as $re => $elem) {
+					if (!is_array($elem) || !isset($elem['tipo'])) {
+						continue;
+					}
+
+					if ($elem['tipo'] === 'cbo') {
+						$campos[$rc][$re]['attr']['opcion'] = $this->obtenerOpcionesCampo(
+							$nombreCampo,
+							$catalogos
+						);
+
+						$campos[$rc][$re]['attr']['select'] = $this->obtenerValorDefault(
+							$nombreCampo,
+							$deff
+						);
+					}
+
+					if ($elem['tipo'] === 'txt') {
+						$campos[$rc][$re]['attr']['value'] = $this->obtenerValorDefault(
+							$nombreCampo,
+							$deff
+						);
 					}
 				}
 			}
 
-			// 2. Recorrer configuración y aplicar a $arrayB
-			foreach ($catConfig as $definicion) {
-				if (!empty($definicion['ver']) && $definicion['ver'] == '1' && !empty($definicion['campo']) && !empty($definicion['cat'])) {
-					$campo = $definicion['campo']; // Campo de $arrayB (ej. IDPRODUCTO)
-					$cat   = $definicion['cat'];   // Catálogo (ej. PRODUCTO)
+			return $campos;
+		}
+		
+		private function obtenerOpcionesCampo(string $nombreCampo, array $catalogos): array
+		{
+			$opciones = ['' => 'TODOS'];
 
-					foreach ($arrayB as &$registro) {
-						if (isset($registro[$campo])) {
-							$valor = (string) $registro[$campo];
+			$comboConfig = $this->config->r_combo ?? [];
 
-							if (isset($catalogos[$cat][$valor])) {
-								$registro[$campo] = $valor . '-' . $catalogos[$cat][$valor];
-							}
+			foreach ($comboConfig as $combo) {
+				$campoConfig = strtoupper($combo['campo'] ?? '');
+				$catConfig   = strtoupper($combo['cat'] ?? '');
+
+				if ($campoConfig !== $nombreCampo || $catConfig === '') {
+					continue;
+				}
+
+				foreach ($catalogos as $grupo) {
+					if (!is_array($grupo)) {
+						continue;
+					}
+
+					foreach ($grupo as $nombreCatalogo => $items) {
+						if (strtoupper($nombreCatalogo) !== $catConfig || !is_array($items)) {
+							continue;
+						}
+
+						foreach ($items as $item) {
+							$codigo = $item['DDIC_LISTA'] ?? '';
+							$texto  = $item['DDIC_NOMBRE'] ?? '';
+							$opciones[$codigo] = $texto;
+						}
+
+						return $opciones;
+					}
+				}
+			}
+
+			return $opciones;
+		}
+
+		private function obtenerValorDefault(string $nombreCampo, array $deff)
+		{
+			foreach ($deff as $fila) {
+				if (!is_array($fila)) {
+					continue;
+				}
+
+				foreach ($fila as $key => $valor) {
+					if (strtoupper($key) === $nombreCampo) {
+						return $valor;
+					}
+				}
+			}
+
+			return '';
+		}
+		
+		private function obtenerCatalogos(): array
+		{
+			$session = session();
+			$indice = service('uri')->getSegment(3) ?? ($this->config->r_dato ?? 'default');
+
+			$key = 'catalogos_' . md5((string)$indice);
+
+			$catalogos = $session->get($key);
+
+			if (!is_array($catalogos) || empty($catalogos)) {
+				$catalogos = $this->cargarDatosCatalogo();
+				$session->set($key, $catalogos);
+			}
+
+			return $catalogos;
+		}
+
+
+		private function descripcionCatalogo(array $arrayA, array &$arrayB): void
+		{
+			$catConfig = $this->config->r_combo ?? [];
+
+			// 1. Construir mapa de catálogos: [CAT][codigo] = nombre
+			$catalogos = [];
+
+			foreach ($arrayA as $catalogoTipo) {
+				if (!is_array($catalogoTipo)) {
+					continue;
+				}
+
+				foreach ($catalogoTipo as $cat => $items) {
+					if (!is_array($items)) {
+						continue;
+					}
+
+					foreach ($items as $item) {
+						$codigo = (string) ($item['DDIC_LISTA'] ?? '');
+						$nombre = $item['DDIC_NOMBRE'] ?? '';
+
+						if ($codigo !== '') {
+							$catalogos[strtoupper($cat)][$codigo] = $nombre;
 						}
 					}
 				}
 			}
+
+			// 2. Recorrer bloques con nueva estructura: ['tabla' => ..., 'datos' => [...]]
+			foreach ($arrayB as &$bloque) {
+				if (!is_array($bloque)) {
+					continue;
+				}
+
+				$tabla = $bloque['tabla'] ?? '';
+				if ($tabla === '' || !isset($bloque['datos']) || !is_array($bloque['datos'])) {
+					continue;
+				}
+
+				foreach ($catConfig as $definicion) {
+					if (!is_array($definicion)) {
+						continue;
+					}
+
+					$tablaConfig = $definicion['tabla'] ?? '';
+					$campo       = strtoupper($definicion['campo'] ?? '');
+					$cat         = strtoupper($definicion['cat'] ?? '');
+					$ver         = $definicion['ver'] ?? '0';
+
+					// Solo aplica si coincide la tabla y está visible
+					if ($tablaConfig !== $tabla || $ver != '1' || $campo === '' || $cat === '') {
+						continue;
+					}
+
+					foreach ($bloque['datos'] as &$registro) {
+						if (!is_array($registro) || !array_key_exists($campo, $registro)) {
+							continue;
+						}
+
+						$valor = (string) $registro[$campo];
+
+						if ($valor !== '' && isset($catalogos[$cat][$valor])) {
+							$registro[$campo] = $valor . '-' . $catalogos[$cat][$valor];
+						}
+					}
+					unset($registro);
+				}
+			}
+			unset($bloque);
 		}
 
+	private function cargarDatosCatalogo(): array
+	{
+		$arr = [];
+		$cat = $this->config->r_combo ?? [];
+		$catalogosUnicos = [];
 
-	private function cargarDatosCatalogo()
-    {
-        $arr = [];
-        $cat = $this->config->r_combo ?? [];
+		foreach ($cat as $elem) {
+			if (!is_array($elem) || empty($elem['cat'])) {
+				continue;
+			}
+			$nombreCatalogo = trim($elem['cat']);
+			if ($nombreCatalogo === '') {
+				continue;
+			}
+			// Evita repetir EMPRESA, ROL, BAI, etc.
+			if (!isset($catalogosUnicos[$nombreCatalogo])) {
+				$catalogosUnicos[$nombreCatalogo] = [$nombreCatalogo => ''];
+			}
+		}
 
-        foreach ($cat as $elem) {
-            if (is_array($elem) && !empty($elem['cat'])) {
-                $arr[] = [$elem['cat'] => ''];
-            }
-        }
+		$arr = array_values($catalogosUnicos);
 
-        if (!empty($arr)) {
-            emp_catalogo($arr);
-        }
+		if (!empty($arr)) {
+			emp_catalogo($arr);
+		}
 
-        return $arr;
-    }
+		return $arr;
+	}
 
-    private function cargarParametrosCampos()
-    {
-        $arrprm = [];
-        $campos = $this->config->r_filtros['cmp'] ?? '';
-        
-		if (is_array($campos)){
-        foreach ($campos as $campo) {
-            $_prm = explode('-', $campo['esp']);
-            $arrprm[$campo['campo']] = $this->datoD($_prm[0]);
-        }
+	private function cargarParametrosCampos(): array
+	{
+		$arrprm = [];
+		$campos = $this->config->r_filtros['cmp'] ?? [];
 
-        return $arrprm;
-	    }
-    }
+		if (!is_array($campos)) {
+			return $arrprm;
+		}
 
-    private function cargarConsultaBotones()
-    {
-        $arrb = [];
-        $cat = $this->config->r_camposbot ?? '';
-		
-		if (is_array($cat)){
-			if (isset($cat)) {
+		foreach ($campos as $campo) {
+			$_prm = explode('-', $campo['esp'] ?? '');
+			$arrprm[$campo['campo']] = $this->datoD($_prm[0] ?? '');
+		}
 
-        foreach ($cat as $elem) {
-            if (is_array($elem)) {
-                $consul = 0;
+		return $arrprm;
+	}	
 
-                if (!empty($elem['where']) && is_array($elem['where'])) {
-                    $consul = 1;
-                    $arrb[] = [$elem['tabla'] => r_emp($elem['where'], $elem['tabla'])];
-                }
+	private function cargarConsulta($r_tipo = ''): array
+	{
+		if ($r_tipo == '' ){$r_tipo = $this->config->_det ?? '';}
+		$arrb = [];
+		$datos = [];
 
-                if (!empty($elem['tabla']) && !$consul) {
-                    $arrb[] = [$elem['tabla'] => r_empo('', $elem['tabla'])];
-                }
-            }
-        }
+		$cat = [$this->config->r_campos] ?? [];
+		if ($r_tipo == 'B' ){$cat = $this->config->r_camposbot ?? [];}
+		if ($r_tipo == 'D' ){$cat = $this->config->r_camposdet ?? [];}
 
-        return $arrb;
-	    }}
-    }
+		if (!is_array($cat) || count($cat) === 0) {
+			return $arrb;
+		}
 
-    private function procesarConsulta()
-    {
-        $_tab = explode('|', $this->config->r_tabla);
-        $_par = explode(',', $_tab[1] ?? '');
+		// Obtener ID de cabecera usando el índice principal
+		$_index =  $this->config->_index ?? '';
+		$cam_ind_maestro = explode("|", $this->config->r_index ?? '');
+		$idCabecera = $this->construirIdDesdeIndex($_index, $cam_ind_maestro);
 
-        $pro = explode('.', $_tab[0] ?? '');
-        $paq = $pro[0] ?? '';
-        $prc = $pro[1] ?? '';
+		foreach ($cat as $r => $elem) {	
 
-        $arrprm = $this->cargarParametrosCampos();
-        $w_dato = (is_array($arrprm) && count($arrprm) > 0) ? implode('|', array_values($arrprm)) : '| | | |';
-         
-        return emp($_tab[0]);		
-    }
+			if (!is_array($elem)) {
+				continue;
+			}
+
+			$tabla = $elem['tabla'] ?? '';
+			$join = $elem['join'] ?? [];
+			$relacion = $elem['relacion'] ?? [];
+			$whereExtra = $elem['where'] ?? [];
+
+			// Si existe relación explícita, construir where desde cabecera
+			if (!empty($relacion) && is_array($relacion)) {
+				$whereDetalle = $this->construirWhereRelacion($idCabecera, $relacion);
+			} else {
+				// fallback al esquema antiguo por índices del detalle
+				$sd = explode(",", $this->config->r_index ?? '');
+				if ($r_tipo == 'B' ){$sd = explode(",", $this->config->r_indexbot ?? '');}
+				if ($r_tipo == 'D' ){$sd = explode(",", $this->config->r_indexdet ?? '');}
+				$cam_ind = explode("|", $sd[$r] ?? '');
+				$whereDetalle = $this->construirIdDesdeIndex($_index, $cam_ind);
+			}
+
+			// Mezclar whereExtra si existe
+			if (is_array($whereExtra) && !empty($whereExtra)) {
+				$whereDetalle = array_merge($whereDetalle, $whereExtra);
+			}
+
+			$dat[$r] = $whereDetalle;
+
+			$consul = 0;
+
+			if (!empty($whereDetalle) && is_array($whereDetalle)) {
+				$consul = 1;
+				$datos = r_emp($whereDetalle, $tabla,$join);
+			}
+
+			if (!empty($tabla) && !$consul) {
+				$datos = r_empo('', $tabla);
+			}
+
+			$arrb[] = [
+            'tabla' => $tabla,
+            'datos' => is_array($datos) ? $datos : []
+        	];
+		}
+
+		$this->config->dat = $dat;
+		return $arrb;
+	}
+
 
 	public function obtenerNuevoContenido()
 	{
@@ -174,6 +435,7 @@ class Empresa extends BaseController
 		$moduloName = session()->get('moduloName') ?? 'No disponible';
 		$transaccionName = session()->get('transaccionName') ?? 'No disponible';
 		$transaccionIn = session()->get('transaccionIn') ?? 'No disponible';
+		$opcionBtn = session()->get('opcionBtn') ?? '';
 
 		// Creamos el nuevo contenido
 		$nuevoContenido = [
@@ -181,8 +443,9 @@ class Empresa extends BaseController
 			'productoName' => $productoName,
 			'moduloId' => $moduloId,
 			'moduloName' => $moduloName,
-			'transaccionName' => $transaccionName,
-			'transaccionIn' => $transaccionIn
+			'transaccionName' => $transaccionName.' - '.$opcionBtn,
+			'transaccionIn' => $transaccionIn,
+			'opcionBtn' => $opcionBtn
 		];
 
 		// Retornamos la respuesta en formato JSON
@@ -192,62 +455,56 @@ class Empresa extends BaseController
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// carga detalle lista boton detalle grid +-
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////				
-		function detalle() {
-			// Obtener los segmentos de la URI
-			$indice = service('uri')->getSegment(3);
-			$this->_param($indice);
-			$i = service('uri')->getSegment(4);
-			$_index = service('uri')->getSegment(5);
-		
-			// Obtener los valores de la configuración
-			$_camposd = $this->config->r_camposdet;
-			$_dato = explode("|", $this->config->r_dato);
-		
-			// Construir la ubicación del detalle
-			$_ubic = $_dato[4] . "|" . $i . "|" . $_index;
-			$i--; // Decrementar el índice
-		
-			// Verificar si existen campos de detalle
-			if (isset($_camposd) && is_array($_camposd)) {
-				$dat = [];
-				$consulta = [];
-		
-				// Iterar sobre los campos de detalle
-				foreach ($_camposd as $r => $campo) {
-					$_param = explode("|", $campo['prm']);
-					$tabla = $_param[4]; // Obtiene el nombre de la tabla
-		
-					// Dividir el índice
-					$cmp_val = explode("--", $_index);
-					array_pop($cmp_val);
-		
-					// Obtener los índices de detalle
-					$sd = explode(",", $this->config->r_indexdet);
-					$cam_ind = explode("|", $sd[$r]);
-					array_pop($cam_ind);
-		
-					// Ajustar los índices si es necesario
-					$this->ajustarIndices($cmp_val, $cam_ind);
-		
-					// Combinar los valores con los índices
-					$dat[$r] = array_combine($cam_ind, $cmp_val);
-					$this->id = $dat[$r];
-		
-					// Realizar la consulta
-					$consulta[$r] = r_emp($this->id, $tabla);
+		function detalle()
+		{
+			$indice = service('uri')->getSegment(3);			
+			$this->_param($indice);	
+			$this->config->r_accion = 'condet';				
+			
+			$totSegmento = service('uri')->getTotalSegments();
+			
+            $i = ($totSegmento >= 4) ? service('uri')->getSegment(4):'0';						
+			$_index = ($totSegmento >= 5) ? service('uri')->getSegment(5):'0';			
+			$_det = ($totSegmento >= 6) ? service('uri')->getSegment(6):'D'; 
+			$_deti = ($totSegmento >= 7) ? service('uri')->getSegment(7):'0';
+			$_ubic_det = ($totSegmento >= 8) ? service('uri')->getSegment(8):'0';	
+
+			$_ubic   =  $indice."|".$i."|".$_index;		
+			
+			$this->config->_index = $_index;
+			$this->config->_det = $_det;
+
+			$consulta = $this->cargarConsulta();
+			$dat = $this->config->dat ?? '';
+
+			$data = [
+				'id' => $dat,
+				'emp' => $consulta,
+				'ubic_det' => $_ubic,
+				'config' => $this->config,
+				'car'=> $this->obtenerCatalogos()
+			]; 
+			
+			$data['emp']  = $this->agregarIndex(
+				$data['emp'],
+				$this->config->r_camposdet ?? []
+			);
+
+			$this->descripcionCatalogo($data['car'],$data['emp']);
+			log_message('debug', 'detalle-data: ' . print_r($data, true));
+			return view('empresa/emp_dlst', $data);
+		}
+		private function construirWhereRelacion(array $idCabecera, array $relacion): array
+		{
+			$where = [];
+
+			foreach ($relacion as $campoCabecera => $campoDetalle) {
+				if (array_key_exists($campoCabecera, $idCabecera)) {
+					$where[$campoDetalle] = $idCabecera[$campoCabecera];
 				}
-		
-				// Preparar los datos para la vista
-				$data = [
-					'id' => $dat,
-					'emp' => $consulta,
-					'ubic_det' => $_ubic,
-					'config' => $this->config
-				];
-		
-				// Cargar la vista
-				view('empresa/emp_dlst', $data);
 			}
+
+			return $where;
 		}
 		
 		/**
@@ -270,7 +527,7 @@ class Empresa extends BaseController
 		// btn crea registo envia pantalla campos
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		function nuevo(){
-			
+
 			$indice = service('uri')->getSegment(3);			
 			$this->_param($indice);
 			$this->config->r_accion = 'nue';
@@ -285,111 +542,82 @@ class Empresa extends BaseController
 						
 			$_ubic   =  $indice."|".$i."|".$_indexc;
 
-			if ($_det == 'D') {
-			    //echo print_r ('paso x D',true);
-				$cmp_val = explode("--",$_indexc);
-				array_pop($cmp_val);
-				
-				$sd = explode(",",$this->config->r_indexdet);
-				$cam_ind =  explode("|",$sd[$_deti]);
-				array_pop($cam_ind);
-				
-				$count_i = count($cmp_val);
-				$count_f = count($cam_ind);
-				
-				if ($count_f > $count_i){ 
-					for ($i = $count_i+1; $i <= $count_f; $i++) {
-						unset($cam_ind[$i-1]);				
-					}
-				}
-				
-				$dat = array_combine($cam_ind,$cmp_val);
-				//echo print_r ($dat,true);
-				
-				$this->id = $dat;
-				
-				$_campos =  $this->config->r_camposdet; 
-				$campos = $_campos[$_deti]['cmp'];		  
-			}else{
-				if ($_det == 'B') {
-					//echo print_r ('paso x B',true);
-					$_campos =  $this->config->r_camposbot;
-					$campos = $_campos[$_deti]['cmp'];
-					}else{
-					//echo print_r ('paso x ',true);
-					$_campos =  $this->config->r_campos;
-					$campos = $_campos['cmp'];
-				}
-			}  
+			$camposConfig = $this->getCamposConfig($_det, $_deti);										
+				$tabla = $camposConfig['tabla'];
+				$cam_ind = $camposConfig['cam_ind'];
+				$campos = $camposConfig['campos'];
 			
-			$iddato = '';
-			if (isset($dat)) {
-				if (is_array($dat)){		
-					if (isset($campos)) {
-						foreach ($campos as $campo) {                     
-							if ($campo['id']== 1) { 
-								if (array_key_exists($campo['campo'],$dat)){
-									$iddato = $iddato . '|' . $dat[$campo['campo']] ; 
-									//$iddato = $iddato . $dat[$campo['campo']] ; 
-								}
-							}
-						}
-			}}}
-					
-			$arrprm=array();
-			
-			if (is_array($_campos)){
-				//$campos = $_campos['cmp'];
-				if (isset($campos)) {
-					foreach ($campos as $campo) {
-						$_prm = explode('-',$campo['esp']);					
-						
-						if (count($_prm)> 1) { 
-							
-							if ($_det == 'D') {
-								$_prm[1] = $_prm[1].'|'. $campo['campo'] . $iddato;
-							}
-							
-							$arrprm[$campo['campo']] = $this->datoD($_prm[1]);
-						}
-					}
-			}}
-						
-			if (isset($dat)) {
-				if (is_array($dat)){
-					//$campos = $_campos['cmp'];
-					if (isset($campos)) {
-						foreach ($campos as $campo) {                     
-							if ($campo['id']== 1) { 
-								if (array_key_exists($campo['campo'],$dat)){
-									$arrprm[$campo['campo']] =$dat[$campo['campo']] ;
-								}
-							}
-						}
-			}}}
+			$dat = $this->construirIdDesdeIndex($_indexc, $cam_ind);
+    		$this->id = $dat;
+
+			$arrprm = $this->construirValoresPorDefecto($campos ?? [], $dat ?? [], $_det);
 								
-								$arrdf[] = $arrprm;  								
-								$data['def'] = $arrdf;
-								$data['emp'] = null;			
-								$data['car'] = $this->cargarDatosCatalogo();				
-								$data['indexc'] = $_indexc;
-								$data['det'] = $_det;
-								$data['deti'] = $_deti;
-								$data['ubic'] = $_ubic;
-								$data['ubic_det'] = $_ubic_det;
-								$data['config'] = $this->config;
+				$arrdf[] = $arrprm;  								
+				$data['def'] = $arrdf;
+				$data['emp'] = null;			
+				$data['car'] = $this->obtenerCatalogos();				
+				$data['indexc'] = $_indexc;
+				$data['det'] = $_det;
+				$data['deti'] = $_deti;
+				$data['ubic'] = $_ubic;
+				$data['ubic_det'] = $_ubic_det;
+				$data['config'] = $this->config;
 
-								view('empresa/emp_cam',$data);
-
+				return view('empresa/emp_cam', $data);
 		}
 
-				//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		private function construirValoresPorDefecto(array $campos, array $dat = [], string $_det = '0'): array
+		{
+			$iddato = '';
+			$arrprm = [];
+
+			foreach ($campos as $campo) {
+				$nombreCampo = $campo['campo'] ?? null;
+				$esId = isset($campo['id']) && (int)$campo['id'] === 1;
+
+				if (!$nombreCampo) {
+					continue;
+				}
+
+				if ($esId && array_key_exists($nombreCampo, $dat)) {
+					$iddato .= '|' . $dat[$nombreCampo];
+				}
+			}
+
+			foreach ($campos as $campo) {
+				$nombreCampo = $campo['campo'] ?? null;
+				$esp = $campo['esp'] ?? '';
+				$esId = isset($campo['id']) && (int)$campo['id'] === 1;
+
+				if (!$nombreCampo) {
+					continue;
+				}
+
+				$_prm = explode('-', $esp);
+
+				if (count($_prm) > 1) {
+					$parametro = $_prm[1];
+
+					if ($_det === 'D') {
+						$parametro .= '|' . $nombreCampo . $iddato;
+					}
+
+					$arrprm[$nombreCampo] = $this->datoD($parametro);
+				}
+
+				if ($esId && array_key_exists($nombreCampo, $dat)) {
+					$arrprm[$nombreCampo] = $dat[$nombreCampo];
+				}
+			}
+
+			return $arrprm;
+		}
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// btn graba registo envia request crea registro -- nuevo
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
 		function recibirdatos() {
-			//
-			$dat = '';
-               
+
 			// Obtener la instancia del servicio de validación
 			$validation = Services::validation();
 		
@@ -402,72 +630,27 @@ class Empresa extends BaseController
 		
 			// Verificar si la solicitud es AJAX
 			if (!$this->request->isAJAX()) {
-				// Si no es una solicitud AJAX, redirigir o mostrar un error
 				// redirect('404');
 				echo "|0|no ajax"; exit;
 			}
 		
-			// Inicializar las reglas de validación
-			$rules = [];
-			$originalRules = [];
-			$_campos =  $this->config->r_campos;
-		
-			if ($_det == 'D') {
-				$cmp_val = explode("--", $_indexc);
-				array_pop($cmp_val);
-		
-				$sd = explode(",", $this->config->r_indexdet);
-				$cam_ind = explode("|", $sd[$_deti]);
-				array_pop($cam_ind);
-		
-				$count_i = count($cmp_val);
-				$count_f = count($cam_ind);
-		
-				if ($count_f > $count_i) {
-					for ($i = $count_i + 1; $i <= $count_f; $i++) {
-						unset($cam_ind[$i - 1]);
-					}
-				}
-		
-				$dat = array_combine($cam_ind, $cmp_val);
-				echo print_r($dat, true);  // Para depurar los datos de los campos
-		
-				$_campos =  $this->config->r_camposdet;
-				$campos = $_campos[$_deti]['cmp'];
-				$___prm = explode("|", $_campos[$_deti]['prm']);
-			} else {
-				$campos = $_campos['cmp'];
-				$___prm = explode("|", $_campos['prm']);
-			}
-		
-			// Validación de las reglas del formulario
-			if (isset($campos)) {
-				foreach ($campos as $campo) {
-					$lista = explode("|", $campo['lst']);
-					if ($lista[1] == 1) {
-						foreach ($campo as $elem) {
-							if (is_array($elem)) {
-								if ($elem['tipo'] == 'rls') {
-									array_push($originalRules, $elem['attr']);
-								}
-							}
-						}
-					}
-				}
-			}
+			$camposConfig = $this->getCamposConfig($_det, $_deti);
+										
+				$tabla = $camposConfig['tabla'];
+				$cam_ind = $camposConfig['cam_ind'];
+				$campos = $camposConfig['campos'];
+				$___prm = $camposConfig['prm'];
 
-			foreach ($originalRules as $rule) {
-				// Usamos el campo 'field' como clave y 'rules' como valor
-				$rules[$rule['field']] = $rule['rules'];
-			}
-		
+			$campos = $campos ?? [];
+
+			$dat = $this->construirIdDesdeIndex($_indexc, $cam_ind);
+			$this->id = $dat;
+
+			$rules = $this->construirReglasValidacion($campos);				
+							
 			// Obtener los datos del formulario enviado por AJAX
 			$data = $this->request->getPost();  // Usar getPost en lugar de $_REQUEST
 			unset($data['url']);  // Eliminar 'url' si está presente en los datos
-		
-			// Depuración de los datos recibidos
-			//return json_encode(['errCodigo' => '0', 'errMenssa' => 'Datos recibidos correctamente','formData' => $rules]);
-			//print_r($rules, true); echo ' rules aqui2'; exit;
 		
 			// Configurar las reglas de validación
 			$validation->setRules($rules);
@@ -484,48 +667,11 @@ class Empresa extends BaseController
 					}
 				}
 		
-				// Procesar datos especiales (campos adicionales)
-				if (is_array($_campos)) {
-					if (isset($campos)) {
-						foreach ($campos as $campo) {
-							$_prm = explode('-', $campo['esp']);
-							if (count($_prm) > 1) {
-								if ($_prm[1] != '') {
-									$pos = strpos($_prm[1], 'SECUENCIA');
-									if ($pos !== false) {
-										$_prm[1] = $_prm[1] . '|' . $campo['campo'];
-									}
-		
-									if (!array_key_exists($campo['campo'], $data)) {
-										$data[$campo['campo']] = $this->datoD($_prm[1], 'E');
-									}
-								}
-							}
-						}
-					}
-				}
-		
-				// Procesar combos múltiples
-				if (isset($campos)) {
-					foreach ($campos as $rc => $campo) {
-						foreach ($data as $rd => $dt) {
-							foreach ($campo as $elem) {
-								if (is_array($elem)) {
-									if ($elem['tipo'] == 'cbo' && strtoupper($rd) == strtoupper($campo['campo'])) {
-										if (strpos($elem['attr']['attr'], 'multiple="multiple"') !== false) {
-											$cdat = $data[$rd];
-											$data[$rd] = implode("|", $cdat);
-										}
-									}
-								}
-							}
-						}
-					}
-				}
+				$data = $this->aplicarDatosEspecialesIngreso($campos, $data);
+        		$data = $this->normalizarCamposMultiples($campos, $data);
 		
 				// Procesar la creación de los datos
-				$dat = $data;
-				$tabla = $___prm[4];
+				//$tabla = $___prm[4];
 		
 				// Validación de creaciones a través de consultas o procedimientos almacenados
 				$_struct =  $this->config->r_struct;
@@ -550,7 +696,7 @@ class Empresa extends BaseController
 						if (count($Pprm) > 1) {
 							if ($Pprm[1] != '') {
 								// Procesar XML si es necesario
-								$_xml = $this->Axml($dat);
+								$_xml = $this->Axml($data);
 							}
 						}
 					}
@@ -563,6 +709,77 @@ class Empresa extends BaseController
 				// En caso de error en la validación
 				echo view('empresa/emp_err', ['validation' => $validation]);
 			}
+		}
+
+		private function construirIdDesdeIndex(string $_indexc, array $cam_ind): array
+		{
+			$cmp_val = explode('--', $_indexc);
+
+			array_pop($cmp_val);
+			array_pop($cam_ind);
+
+			$this->ajustarIndices($cmp_val, $cam_ind);
+
+			return array_combine($cam_ind, $cmp_val) ?: [];
+		}
+
+		private function aplicarDatosEspecialesIngreso(array $campos, array $data): array
+		{
+			foreach ($campos as $campo) {
+				$nombreCampo = $campo['campo'] ?? null;
+				$esp = $campo['esp'] ?? '';
+
+				if (!$nombreCampo || $esp === '') {
+					continue;
+				}
+
+				$_prm = explode('-', $esp);
+
+				if (count($_prm) > 1 && trim($_prm[1]) !== '') {
+					$parametro = $_prm[1];
+
+					if (strpos($parametro, 'SECUENCIA') !== false) {
+						$parametro .= '|' . $nombreCampo;
+					}
+
+					if (!array_key_exists($nombreCampo, $data)) {
+						$data[$nombreCampo] = $this->datoD($parametro, 'E');
+					}
+				}
+			}
+
+			return $data;
+		}
+
+		private function construirReglasValidacion(array $campos): array
+		{
+			$rules = [];
+
+			foreach ($campos as $campo) {
+				$lst = $campo['lst'] ?? '';
+				$lista = explode('|', $lst);
+
+				if (($lista[1] ?? 0) != 1) {
+					continue;
+				}
+
+				foreach ($campo as $elem) {
+					if (!is_array($elem)) {
+						continue;
+					}
+
+					if (($elem['tipo'] ?? null) === 'rls') {
+						$field = $elem['attr']['field'] ?? null;
+						$rule  = $elem['attr']['rules'] ?? null;
+
+						if ($field && $rule) {
+							$rules[$field] = $rule;
+						}
+					}
+				}
+			}
+
+			return $rules;
 		}
 		
 		function Axml($dat){
@@ -638,14 +855,12 @@ class Empresa extends BaseController
 				$tabla = $camposConfig['tabla'];
 				$cam_ind = $camposConfig['cam_ind'];
 						
-				$cmp_val = explode("--",$_index);
-				array_pop($cmp_val);
-				array_pop($cam_ind);
-				$this->id = array_combine($cam_ind,$cmp_val);
+				$dat = $this->construirIdDesdeIndex($_index, $cam_ind);
+       		    $this->id = $dat;
 											
 				$data['emp'] = r_emp($this->id,$tabla);
 				$data['def'] = null;								
-				$data['car'] = $this->cargarDatosCatalogo();
+				$data['car'] = $this->obtenerCatalogos();
 				$data['indexc'] = $_indexc;
 				$data['det'] = $_det;
 				$data['deti'] = $_deti;
@@ -653,7 +868,7 @@ class Empresa extends BaseController
 				$data['ubic_det'] = $_ubic_det;
                 $data['config'] = $this->config;				
 
-				View('empresa/emp_cam',$data);				
+				return view('empresa/emp_cam', $data);				
 				
 		}
 
@@ -668,93 +883,24 @@ class Empresa extends BaseController
 			$_det = service('uri')->getSegment(6);
 			$_deti = service('uri')->getSegment(7);
 			
-			$data = $_REQUEST;
+			$data = $this->request->getPost();
 			unset($data['url']);
 			$dat = $data;			
 			
-			if ($_det == 'D') {
-				$_campos =  $this->config->r_camposdet; 
-				$sd = explode(",",$this->config->r_indexdet);				
-				$cam_ind =  explode("|",$sd[$_deti]);			
-				$campos = $_campos[$_deti]['cmp'];
-				$___prm = explode("|",$_campos[$_deti]['prm']);			
-				}else{
-				if ($_det == 'B') {
-				$_campos =  $this->config->r_camposbot; 
-				$sd = explode(",",$this->config->r_indexbot);				
-				$cam_ind =  explode("|",$sd[$_deti]);			
-				$campos = $_campos[$_deti]['cmp'];
-				$___prm = explode("|",$_campos[$_deti]['prm']);
-				$___prm[4] = explode("|",$_campos[$_deti]['tabla']);	
-				}else{
-				$_campos =  $this->config->r_campos;
-				$cam_ind =  explode("|",$this->config->r_index);
-				$campos = $_campos['cmp'];	
-				$___prm = explode("|",$_campos['prm']);
-				$___prm[4] = $_campos['tabla'];
-		    }}  
-			
-			//echo print_r($_campos,true);
-			// datos especiales ----------------------------------------
-			//if (is_array($_campos)){
-			//   $campos = $_campos['cmp'];
-			if (isset($campos)) {
-				foreach ($campos as $campo) {
-					$_prm = explode('-',$campo['esp']);                      
-					if (count($_prm)>=2){
-						if ($_prm[2]!=''){ 
-							if (!array_key_exists($campo['campo'], $data)){
-								$data[$campo['campo']] = $this->datoD($_prm[1],'E');                         
-							}}}
-				}
-			}//}        
-			
-			if (isset($campos)) {
-				foreach ($campos as $campo) {
-					foreach ($dat as $rd => $dt ) {
-						if ($campo['id'] == 0 and strtoupper($rd) == strtoupper($campo['campo']) ) {
-						//if ($campo['id'] == 0 and ($rd) == ($campo['campo']) ) {
-							unset($dat[$rd]);
-						}}
-				}
-			}
-			
-			$this->id = $dat;
-			// multiple jhc 2022 no va esta validando mal
-			if (isset($campos)) {
-				foreach ($campos as $rc => $campo) {
-					foreach ($data as $rd => $dt ) {
-						foreach ($campo as $elem) {
-							if (is_array($elem)) {
-								//if ($elem['tipo'] == 'cbo' and strtoupper($rd) == strtoupper($campo['campo'])) {
-								if ($elem['tipo'] == 'cbo' and ($rd) == ($campo['campo'])) {
-									//echo 'aquiiiiii';
-									//echo print_r($elem['attr']['attr'],true);
-									if (strpos($elem['attr']['attr'],'multiple="multiple"') !== false) {								 
-										//echo 'x multiple';
-										$cdat = $data[$rd];
-										$data[$rd] = implode("|",$cdat);
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			
-			
-			
-			$tabla =  $___prm[4];
-			
-            
-			//$tabla =  $this->config->item('r_tabla');
-			//echo print_r($tabla,true);
-			//echo print_r($data,true);
-			//echo print_r($this->id,true);
-            //exit;
+			$camposConfig = $this->getCamposConfig($_det, $_deti);
+										
+				$tabla = $camposConfig['tabla'];
+				$cam_ind = $camposConfig['cam_ind'];
+				$campos = $camposConfig['campos'];					
+				$___prm = $camposConfig['prm'];
+				$___prm[4] = $tabla;
 
-			
-			//$respuesta = $this->empresa_model->actualizar_emp($this->id,$data,$tabla);
+				$campos = $campos ?? [];
+
+				$data = $this->aplicarDatosEspeciales($campos, $data);
+				$this->id = $this->extraerCamposId($campos, $data);
+				$data = $this->normalizarCamposMultiples($campos, $data);
+						
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////revisar
 			$_struct =  $this->config->r_struct;
 			if ($_det == 'D') {
@@ -768,15 +914,7 @@ class Empresa extends BaseController
 				$respuesta = emp_sp($data,$dat_struct->base.".actualiza_".$dat_struct->nombre);
 			}else{
 				$respuesta = actualizar_emp($this->id,$data,$tabla);
-			}
-			
-			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////revisar
-			//$_structpr =  $this->config->r_structpr;
-			//$mdat_structpr = explode("|",$dat_structpr->metodo);
-            if ($mdat_struct[1] == "1") { /// index 1 para ingreso
-				$respuesta = emp_sp($data,$dat_struct->base.".actualiza_".$dat_struct->nombre);
-			}
-
+			}						
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////revisar
 			echo json_encode($respuesta);
 			
@@ -791,34 +929,124 @@ class Empresa extends BaseController
 			
 		}
 
-		// Función para obtener la configuración de campos según el valor de $_det
-		private function getCamposConfig($_det, $_deti) {
-			$camposConfig = [];
-			if ($_det == 'D') {
-				$camposCon['campos'] = $this->config->r_camposdet;
-				$sd = explode(",", $this->config->r_indexdet);
-				$cam_ind = explode("|", $sd[$_deti]);
-				$camposConfig['campos'] = $camposCon['campos'][$_deti]['cmp'];
-				$camposConfig['prm'] = explode("|", $camposCon['campos'][$_deti]['prm']);
-				$camposConfig['tabla'] = $camposCon['campos'][$_deti]['tabla'];
-			} elseif ($_det == 'B') {
-				$camposCon['campos'] = $this->config->r_camposbot;
-				$sd = explode(",", $this->config->r_indexbot);
-				$cam_ind = explode("|", $sd[$_deti]);
-				$camposConfig['campos'] = $camposCon['campos'][$_deti]['cmp'];
-				$camposConfig['prm'] = explode("|", $camposCon['campos'][$_deti]['prm']);
-			    $camposConfig['tabla'] = $camposCon['campos'][$_deti]['tabla'];
-			} else {				
-				$camposCon['campos'] = $this->config->r_campos;
-				$cam_ind = explode("|", $this->config->r_index);
-				$camposConfig['campos'] = $camposCon['campos']['cmp'];
-				$camposConfig['prm'] = explode("|", $camposCon['campos']['prm']);
-				$camposConfig['tabla'] = $camposCon['campos']['tabla'];
-			}            
-			$camposConfig['cam_ind'] = $cam_ind;		
-			return $camposConfig;
+		private function aplicarDatosEspeciales(array $campos, array $data): array
+		{
+			foreach ($campos as $campo) {
+				$nombreCampo = $campo['campo'] ?? null;
+				$esp = $campo['esp'] ?? '';
+
+				if (!$nombreCampo || $esp === '') {
+					continue;
+				}
+
+				$_prm = explode('-', $esp);
+
+				if (count($_prm) >= 3) {
+					$tieneEspecial = trim($_prm[2]) !== '';
+
+					if ($tieneEspecial && !array_key_exists($nombreCampo, $data)) {
+						$data[$nombreCampo] = $this->datoD($_prm[1], 'E');
+					}
+				}
+			}
+
+			return $data;
 		}
-		
+
+		private function extraerCamposId(array $campos, array $data): array
+		{
+			$camposId = [];
+
+			foreach ($campos as $campo) {
+				$nombreCampo = $campo['campo'] ?? null;
+				//$esId = isset($campo['id']) && (int)$campo['id'] !== 0;
+				$esId = isset($campo['id']) && (int)$campo['id'] === 1;
+
+				if ($esId && $nombreCampo) {
+					$camposId[] = strtoupper($nombreCampo);
+				}
+			}
+
+			if (empty($camposId)) {
+				return [];
+			}
+
+			$resultado = [];
+
+			foreach ($data as $key => $value) {
+				if (in_array(strtoupper($key), $camposId, true)) {
+					$resultado[$key] = $value;
+				}
+			}
+
+			return $resultado;
+		}
+
+		private function normalizarCamposMultiples(array $campos, array $data): array
+		{
+			foreach ($campos as $campo) {
+				$nombreCampo = $campo['campo'] ?? null;
+
+				if (!$nombreCampo || !array_key_exists($nombreCampo, $data)) {
+					continue;
+				}
+
+				foreach ($campo as $elem) {
+					if (!is_array($elem)) {
+						continue;
+					}
+
+					$tipo = $elem['tipo'] ?? null;
+					$attr = $elem['attr']['attr'] ?? '';
+
+					if (
+						$tipo === 'cbo' &&
+						strpos($attr, 'multiple="multiple"') !== false &&
+						is_array($data[$nombreCampo])
+					) {
+						$data[$nombreCampo] = implode('|', $data[$nombreCampo]);
+					}
+				}
+			}
+
+			return $data;
+		}
+
+		// Función para obtener la configuración de campos según el valor de $_det
+		private function getCamposConfig($_det, $_deti): array
+		{
+			$camposConfig = [];
+
+			session()->set('opcionBtn', '');
+
+			if ($_det == 'D') {
+				$camposCon = $this->config->r_camposdet ?? [];
+				$sd = explode(",", $this->config->r_indexdet ?? '');
+				$cam_ind = explode("|", $sd[$_deti] ?? '');
+				$camposConfig['campos'] = $camposCon[$_deti]['cmp'] ?? [];
+				$camposConfig['prm'] = explode("|", $camposCon[$_deti]['prm'] ?? '');
+				$camposConfig['tabla'] = $camposCon[$_deti]['tabla'] ?? '';
+				session()->set('opcionBtn', $camposCon[$_deti]['title']);
+			} elseif ($_det == 'B') {
+				$camposCon = $this->config->r_camposbot ?? [];
+				$sd = explode(",", $this->config->r_indexbot ?? '');
+				$cam_ind = explode("|", $sd[$_deti] ?? '');
+				$camposConfig['campos'] = $camposCon[$_deti]['cmp'] ?? [];
+				$camposConfig['prm'] = explode("|", $camposCon[$_deti]['prm'] ?? '');
+				$camposConfig['tabla'] = $camposCon[$_deti]['tabla'] ?? '';
+				session()->set('opcionBtn', $camposCon[$_deti]['title']);
+			} else {
+				$camposCon = $this->config->r_campos ?? [];
+				$cam_ind = explode("|", $this->config->r_index ?? '');
+				$camposConfig['campos'] = $camposCon['cmp'] ?? [];
+				$camposConfig['prm'] = explode("|", $camposCon['prm'] ?? '');
+				$camposConfig['tabla'] = $camposCon['tabla'] ?? '';
+			}
+
+			$camposConfig['cam_ind'] = $cam_ind ?? [];
+
+			return $camposConfig;
+		}		
 
 		function eliminar(){
 			
@@ -838,10 +1066,8 @@ class Empresa extends BaseController
 				$tabla = $camposConfig['tabla'];
 				$cam_ind = $camposConfig['cam_ind'];
 			
-			$cmp_val = explode("--",$_index);
-			array_pop($cmp_val);
-			array_pop($cam_ind);
-			$this->id = array_combine($cam_ind,$cmp_val);
+			$dat = $this->construirIdDesdeIndex($_index, $cam_ind);
+       		$this->id = $dat;
 
 			$PRO ='N';
 			
@@ -884,7 +1110,6 @@ class Empresa extends BaseController
 			
 			
 		}
-
 		
 		function msgAlert($tipo,$mensaje){
 			$rsp = "";
@@ -895,10 +1120,9 @@ class Empresa extends BaseController
 			$rsp ="<div class = 'alert alert-success alert-dismissible fade show' role='alert'> Transaccion Exitosa ".$mensaje."<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>'";
 			}
 			return $rsp;    
-			}
+		}
 
-
-        		//-D CAMPO 0-
+        //-D CAMPO 0-
 		function datoD($_parm,$_std = 'D'){
 			$acc = explode(' ',$_parm);
 			$rsp = ' ';
@@ -927,10 +1151,10 @@ class Empresa extends BaseController
 						$rsp = $this->fecha($prm) ;   
 					} 
 					
-					if ( $ind == 'USUARIO' ){
-						$rsp = 'JULIO' ;   
-					} 
-					//echo '01';
+					if ($ind == 'USUARIO') {
+						$rsp = session('usuario') ?? 'JULIO';
+					}
+					
 					if ( $ind == 'SECUENCIA' ){
 						//echo '02';
 						//// $params = [];
@@ -957,9 +1181,7 @@ class Empresa extends BaseController
 				return $rsp;
 		}
 
-		function fecha($refe){
-			
-			
+		function fecha($refe){			
 			$_re = explode('|',$refe);
 			$_f = new \DateTime('now');
 			
@@ -1071,22 +1293,20 @@ class Empresa extends BaseController
     }
     
 		function _param($indice){
-
 			try {
-			helper('TransacProducto');			
-			$this->config = (object) obtenerConfiguracionTransaccion($indice);
-			//$this->config = json_decode(json_encode(obtenerConfiguracionTransaccion($indice)));
-			//echo 'paso 000' ; 
-			//print_r($this->config, true) ; exit;
-            $this->_index();
-			//print_r($this->config, true) ; exit;
-		} catch (\Exception $e) {
-			// Mensaje de error amigable
-			log_message('error', 'Error en _param: ' . $e->getMessage());
-			echo 'Ocurrió un error al cargar la configuración: ' . $e->getMessage();
-			exit;
-		}
-			
+				helper('TransacProducto');			
+				$this->config = (object) obtenerConfiguracionTransaccion($indice);
+				//$this->config = json_decode(json_encode(obtenerConfiguracionTransaccion($indice)));
+				//echo 'paso 000' ; 
+				//print_r($this->config, true) ; exit;
+				$this->_index();
+				//print_r($this->config, true) ; exit;
+			} catch (\Exception $e) {
+				// Mensaje de error amigable
+				log_message('error', 'Error en _param: ' . $e->getMessage());
+				echo 'Ocurrió un error al cargar la configuración: ' . $e->getMessage();
+				exit;
+			}			
         }
 
 		function _index()

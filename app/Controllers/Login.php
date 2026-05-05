@@ -14,35 +14,52 @@ class Login extends BaseController
     }
 
     public function auth()
-    {        
-        $rules = [ 
-            'user' => 'required',
-            'password' => 'required'            
+    {
+        $rules = [
+            'user'     => 'required',
+            'password' => 'required'
         ];
 
-        if(!$this->validate($rules)){            
-           return redirect()->back()->withInput()->with('errors',$this->validator->listErrors());
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->listErrors());
         }
 
         $userModel = new UsersModel();
-        $post = $this->request->getPost(['user','password']);
+        $usuarioEmpresaModel = new \App\Models\UsuarioEmpresaModel();
 
-        $user =  $userModel->validateUser($post['user'],$post['password']);
+        $post = $this->request->getPost(['user', 'password']);
+        $user = $userModel->validateUser($post['user'], $post['password']);
 
-        if ($user !== null ){
-            
-            $token = bin2hex(random_bytes(16)); // Generar token único
-            $empresaId = 1;
+        if ($user !== null) {
+
+            $token = bin2hex(random_bytes(16));
             $ip = $this->request->getIPAddress();
             $maquina = gethostname();
-            //$ip_cliente = $_SERVER['REMOTE_ADDR'];
-            //$maquina = gethostbyaddr($ip_cliente);
-            
-            $user['token'] = $token;
-            $user['empresaId'] = $empresaId;
-            $user['ip'] = $ip;
-            $user['maquina'] = $maquina;
-            
+
+            // Empresas del usuario
+            $empresaLista = $usuarioEmpresaModel->getEmpresasUsuario($user['id']);
+            $empresaDefault = $usuarioEmpresaModel->getEmpresaDefault($empresaLista);
+
+            if (empty($empresaLista)) {
+                return redirect()->back()
+                    ->withInput()
+                    ->with('errors', 'El usuario no tiene empresas activas asignadas.');
+            }
+
+            $empresaId = $empresaDefault['IDEMPRESA'] ?? null;
+
+            if (empty($empresaId)) {
+                return redirect()->back()
+                    ->withInput()
+                    ->with('errors', 'No se pudo determinar la empresa por defecto del usuario.');
+            }
+
+            $user['token']        = $token;
+            $user['empresaId']    = $empresaId;
+            $user['empresaLista'] = $empresaLista;
+            $user['ip']           = $ip;
+            $user['maquina']      = $maquina;
+
             $dataSs = [
                 'IDEMPRESA' => $empresaId,
                 'IDUSUARIO' => $user['id'],
@@ -50,27 +67,29 @@ class Login extends BaseController
                 'IPADDRESS' => $ip,
                 'MAQUINA'   => $maquina,
                 'ESTADO'    => 'A',
-                'USUCREA'    => $user['user']
+                'USUCREA'   => $user['user']
             ];
-            
+
             $sesionModel = new SesionModel();
             $sesionModel->insert($dataSs);
-            $idSesion = $sesionModel->insertID(); 
-            
+            $idSesion = $sesionModel->insertID();
+
             $user['idSesion'] = $idSesion;
-            
+
             $sesionMenuModel = new SesionMenuModel();
-            $resultado = $sesionMenuModel->poblarSesionMenu($empresaId, $user['id'], $idSesion);
+            $sesionMenuModel->poblarSesionMenu($empresaId, $user['id'], $idSesion);
+
             $userMenu = $sesionMenuModel->getMenuByUser($idSesion);
             $user['userMenu'] = $userMenu;
 
             $this->setSession($user);
 
+            //log_message('debug', 'Login-auth SESSION DATA: ' . print_r(session()->get(), true));
+
             return redirect()->to(base_url('home'));
         }
 
-        return redirect()->back()->withInput()->with('errors','usuario contraseña son incorrecto.');
-
+        return redirect()->back()->withInput()->with('errors', 'usuario contraseña son incorrecto.');
     }
 
     private function setSession($userData)
@@ -82,7 +101,7 @@ class Login extends BaseController
             'userid' => $userData['id'],
             'username' => $userData['name'],
             'token' => $userData['token'],
-            'empresaId' => $userData['empresaId'],
+            'empresaId' => $userData['empresaId'] ?? null,
             'ip' => $userData['ip'],
             'maquina' => $userData['maquina'],
             'last_activity' => time(),
@@ -93,7 +112,8 @@ class Login extends BaseController
             'productoName'=>'', 
             'moduloId'=>'0',
             'moduloName'=>'', 
-            'permiso' => 'NA'
+            'permiso' => 'NA',            
+            'empresaLista'=> $userData['empresaLista'] ?? []
         ];
 
         $this->session->set($data);
@@ -110,5 +130,54 @@ class Login extends BaseController
         }
 
         return redirect()->to(base_url());
+    }
+
+    public function cambiarEmpresa()
+    {
+        if (!session('logged_in')) {
+            return $this->response->setJSON([
+                'ok' => false,
+                'msg' => 'Sesión no válida'
+            ]);
+        }
+
+        $empresaIdNueva = $this->request->getPost('empresaId');
+        $empresaLista = session('empresaLista') ?? [];
+        $idUsuario = session('userid');
+        $idSesion = session('idSesion');
+
+        //log_message('debug', 'Login-cambiarEmpresa empresaIdNueva: ' . $empresaIdNueva);
+        //log_message('debug', 'Login-cambiarEmpresa idSesion: ' . $idSesion);
+
+        $permitida = false;
+        foreach ($empresaLista as $empresa) {
+            if ((string)$empresa['IDEMPRESA'] === (string)$empresaIdNueva) {
+                $permitida = true;
+                break;
+            }
+        }
+
+        if (!$permitida) {
+            return $this->response->setJSON([
+                'ok' => false,
+                'msg' => 'La empresa no pertenece al usuario'
+            ]);
+        }
+
+        session()->set('empresaId', $empresaIdNueva);
+
+        $sesionMenuModel = new \App\Models\SesionMenuModel();
+        $sesionMenuModel->poblarSesionMenu($empresaIdNueva, $idUsuario, $idSesion);
+
+        $userMenu = $sesionMenuModel->getMenuByUser($idSesion);
+        session()->set('userMenu', $userMenu);
+
+        //log_message('debug', 'Login-cambiarEmpresa SESSION DATA: ' . print_r(session()->get(), true));
+
+        return $this->response->setJSON([
+            'ok' => true,
+            'msg' => 'Empresa actualizada',
+            'empresaId' => $empresaIdNueva
+        ]);
     }
 }

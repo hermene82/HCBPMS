@@ -11,6 +11,8 @@ $routes->post('/auth', 'Login::auth');
 $routes->post('HCbpms/auth', 'Login::auth');
 $routes->get('/logout', 'Login::logout');
 $routes->get('HCbpms/logout', 'Login::logout'); 
+$routes->post('/cambiarEmpresa', 'Login::cambiarEmpresa');
+$routes->post('HCbpms/cambiarEmpresa', 'Login::cambiarEmpresa');
 //$routes->post('HCbpms/auth', 'Login::auth');
 //$routes->post('/auth', 'Login::auth');
 
